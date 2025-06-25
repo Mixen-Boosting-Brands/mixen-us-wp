@@ -1,0 +1,31 @@
+#bullet-points {
+    margin-bottom: -120px;
+
+    .number {
+        background-color: $primary;
+        border-radius: 20px;
+        color: $white;
+        font-family: "trapmedium", sans-serif;
+        @include font-size(3rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 15px;
+        width: 80px;
+        height: 80px;
+        padding-top: 10px;
+        @include transition(ease, 0.3s);
+    }
+
+    .swiperSuccessStoriesInternal {
+        padding-bottom: 60px;
+
+        .swiper-scrollbar-horizontal {
+            bottom: 0;
+        }
+    }
+}
+
+.cta-success-story {
+    padding-top: 180px;
+}

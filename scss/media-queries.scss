@@ -1,0 +1,296 @@
+// No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+    #why-choose-mixen {
+        #bg-iphone {
+            padding-top: 77px;
+        }
+    }
+
+    #how-we-compare {
+        h3 {
+            @include font-size(1.6rem);
+        }
+    }
+
+    #bullet-points {
+        .number {
+            width: 100px;
+            height: 100px;
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    .masonry-grid {
+        .grid-item {
+            width: 50%;
+            padding: 0 12px;
+            margin-bottom: 24px;
+        }
+    }
+
+    #about-us {
+        .decor {
+            display: block;
+        }
+
+        #img-1 {
+            top: 60px;
+            left: -112px;
+        }
+
+        #img-2 {
+            bottom: 0;
+            left: -56px;
+        }
+
+        #img-3 {
+            top: 100px;
+            right: -112px;
+        }
+
+        #img-4 {
+            bottom: -60px;
+            right: -56px;
+        }
+    }
+
+    #our-expertise {
+        .card {
+            min-height: 320px;
+        }
+    }
+
+    #lfp {
+        .card {
+            min-height: 327px;
+        }
+    }
+
+    #who-we-build-for {
+        .card {
+            min-height: 344px;
+        }
+    }
+
+    #cta {
+        .hoverable {
+            img {
+                width: 150px;
+            }
+
+            #text-1 {
+                left: 82px;
+            }
+
+            #text-2 {
+                right: 82px;
+            }
+
+            #text-3 {
+                left: 92px;
+            }
+
+            #text-4 {
+                right: 92px;
+            }
+
+            .circle {
+                width: 80px;
+                height: 80px;
+                @include font-size(2rem);
+            }
+
+            .circle-primary {
+                right: -15px;
+            }
+
+            .circle-secondary {
+                left: -15px;
+            }
+
+            &:hover,
+            &:focus {
+                #text-1 {
+                    left: -10px;
+                }
+
+                #text-2 {
+                    right: -10px;
+                }
+
+                #text-3 {
+                    left: 0px;
+                }
+
+                #text-4 {
+                    right: 0px;
+                }
+            }
+        }
+    }
+
+    #mixen-is-different {
+        .vertical-line {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background-color: #d9d9d9;
+            z-index: 1;
+
+            &::after {
+                content: "";
+                position: absolute;
+                top: var(--indicator-top, 0);
+                left: 0;
+                width: 2px;
+                height: 200px;
+                background-color: $primary;
+                transition: top 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+            }
+        }
+    }
+
+    #jumbotron-type-2 {
+        #bg-iphone {
+            width: 262px;
+            height: 450px;
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    .masonry-grid {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 0 -12px;
+
+        .grid-item {
+            &.col-lg-7 {
+                flex: 0 0 auto;
+                width: 58.333333%;
+            }
+
+            &.col-lg-5 {
+                flex: 0 0 auto;
+                width: 41.666667%;
+            }
+        }
+    }
+
+    #lfp {
+        .card {
+            min-height: auto;
+        }
+    }
+
+    #who-we-build-for {
+        .card {
+            min-height: 257px;
+        }
+    }
+
+    #how-does-it-work {
+        .circle {
+            width: 125px;
+            height: 125px;
+        }
+    }
+
+    #cta {
+        .hoverable {
+            img {
+                width: 180px;
+            }
+
+            #text-1 {
+                left: 100px;
+            }
+
+            #text-2 {
+                right: 100px;
+            }
+
+            #text-3 {
+                left: 98px;
+            }
+
+            #text-4 {
+                right: 98px;
+            }
+
+            .circle {
+                width: 80px;
+                height: 80px;
+                @include font-size(2rem);
+            }
+
+            .circle-primary {
+                right: -15px;
+            }
+
+            .circle-secondary {
+                left: -15px;
+            }
+
+            &:hover,
+            &:focus {
+                #text-1 {
+                    left: -10px;
+                }
+
+                #text-2 {
+                    right: -10px;
+                }
+
+                #text-3 {
+                    left: 0px;
+                }
+
+                #text-4 {
+                    right: 0px;
+                }
+            }
+        }
+    }
+
+    #jumbotron-type-2 {
+        #bg-iphone {
+            width: 227px;
+            height: 390px;
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+    #about-us {
+        #img-1 {
+            left: -56px;
+        }
+
+        #img-2 {
+            left: 0;
+        }
+
+        #img-3 {
+            right: -56px;
+        }
+
+        #img-4 {
+            right: 0px;
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+}

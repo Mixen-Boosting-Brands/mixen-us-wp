@@ -1,0 +1,626 @@
+// Global styles
+html,
+body {
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $light-bg-color;
+    color: $main-font;
+    font-family: "Funnel Sans", sans-serif;
+    font-weight: 300;
+    @include font-size(1.2rem);
+    position: relative;
+}
+
+header,
+section,
+footer {
+    width: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+
+.mh-100 {
+    min-height: 100vh;
+}
+
+a {
+    text-decoration: none;
+    @include transition(ease, 0.3s);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $black;
+    font-family: "trapmedium", sans-serif;
+}
+
+strong {
+    color: $black;
+    font-weight: 500;
+}
+
+.py-60 {
+    padding: 60px 0;
+}
+
+.pt-60 {
+    padding-top: 60px;
+}
+
+.pb-60 {
+    padding-bottom: 60px;
+}
+
+.py-30 {
+    padding: 30px 0;
+}
+
+.pt-30 {
+    padding-top: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.elemento-parallax {
+    will-change: transform;
+    transform: translateY(0);
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    transition: transform 0.1s ease-out;
+    pointer-events: none; // Opcional: evita interferencias con clicks
+}
+
+.whatsapp {
+    @include whatsapp-button;
+}
+
+.overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.has-overlay {
+    color: white;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: white;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    .btn {
+        position: relative;
+        z-index: 2;
+    }
+}
+
+.btn {
+    border-radius: var(--bs-border-radius-pill) !important;
+}
+
+.btn-primary {
+    border: 1px solid $primary;
+}
+
+.btn-secondary {
+    border: 1px solid $black;
+
+    &:hover,
+    &:focus {
+        background-color: darken(white, 5%);
+        border: 1px solid $black;
+    }
+}
+
+.card {
+    background-color: transparent;
+}
+
+.masonry-grid {
+    margin: 0 -12px;
+
+    &:after {
+        content: "";
+        display: block;
+        clear: both;
+    }
+
+    .grid-item {
+        float: left;
+        width: 100%;
+        padding: 0 12px;
+        margin-bottom: 24px;
+    }
+}
+
+.badge {
+    margin-bottom: 0;
+    @include transition(ease, 0.3s);
+}
+
+.bg-light {
+    background-color: $light-bg-color !important;
+    // color: $black;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $black;
+    }
+
+    .card {
+        border-color: #b3b3b3;
+        color: #4f4f4f;
+        padding: 30px;
+        @include transition(ease, 0.3s);
+
+        .card-body {
+            padding: 0 1rem 0 0;
+        }
+
+        .badge {
+            border: 1px solid #b3b3b3;
+            color: #4f4f4f;
+            font-weight: normal;
+            @include font-size(0.8rem);
+        }
+
+        .card-title {
+            color: $black;
+        }
+
+        .card-text {
+            @include font-size(0.9rem);
+
+            &:last-child {
+                margin-bottom: 1rem !important;
+            }
+        }
+
+        .thumb {
+            border-radius: var(--bs-card-border-radius);
+        }
+
+        img {
+            border-radius: var(--bs-card-border-radius);
+            object-fit: cover;
+            object-position: center;
+            top: 0;
+            left: 0;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: $primary;
+            color: #bfbfbf;
+
+            .badge,
+            .card-title {
+                color: $white;
+            }
+
+            .badge {
+                background-color: $white;
+                color: #4f4f4f;
+            }
+        }
+    }
+}
+
+.bg-dark {
+    background-color: $dark-bg-color;
+    color: $white;
+
+    a {
+        color: $white;
+
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+
+    hr {
+        border-top: 1px solid #343434;
+    }
+
+    .card {
+        border-color: #b3b3b3;
+        color: #bfbfbf;
+        padding: 30px;
+        @include transition(ease, 0.3s);
+
+        .card-body {
+            padding: 0 1rem 0 0;
+        }
+
+        .badge {
+            border: 1px solid #b3b3b3;
+            font-weight: normal;
+            @include font-size(0.8rem);
+        }
+
+        .card-title {
+            color: $white;
+        }
+
+        .card-text {
+            @include font-size(0.9rem);
+
+            &:last-child {
+                margin-bottom: 1rem !important;
+            }
+        }
+
+        .thumb {
+            border-radius: var(--bs-card-border-radius);
+        }
+
+        img {
+            border-radius: var(--bs-card-border-radius);
+            object-fit: cover;
+            object-position: center;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    .form-control {
+        background-color: transparent;
+        border: 1px solid #b3b3b3;
+        color: #eeebf0;
+    }
+
+    textarea.form-control {
+        height: 150px;
+    }
+
+    .form-floating > label {
+        color: #eeebf0;
+    }
+
+    .form-floating > textarea:focus ~ label::after,
+    .form-floating > textarea:not(:placeholder-shown) ~ label::after {
+        background-color: transparent;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+    }
+}
+
+header {
+    background-color: $white;
+    width: 100%;
+    height: auto;
+    padding: 15px 30px;
+    // color: ;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    @include transition(ease, 0.2s);
+
+    #logo-navbar {
+        width: 200px;
+        @include transition(ease, 0.2s);
+    }
+
+    #mburger {
+        // color: ;
+
+        &:hover,
+        &:focus {
+            // color: ;
+        }
+    }
+}
+
+.navbar-scroll {
+    background-color: rgba(255, 255, 255, 1);
+    -webkit-backdrop-filter: saturate(300%) blur(32px);
+    backdrop-filter: saturate(300%) blur(32px);
+    border-bottom: none;
+    padding: 10px 0 !important;
+    @include transition(ease, 0.3s);
+
+    #logo-navbar {
+        width: 160px !important;
+    }
+
+    #mburger {
+        // color: !important;
+    }
+}
+
+#mapa {
+    line-height: 0;
+
+    p {
+        margin: 0;
+        padding: 0;
+    }
+}
+
+.subtle-shadow {
+    box-shadow:
+        0 1px 2px rgba(0, 0, 0, 0.07),
+        0 2px 4px rgba(0, 0, 0, 0.06),
+        0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+#jumbotron-home {
+    @include background("../images/bg-jumbotron.png", center, cover);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    text-align: center;
+
+    h1 {
+        @include font-size(5rem);
+    }
+
+    .container,
+    .row {
+        height: 100vh;
+    }
+}
+
+#jumbotron-type-1 {
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    min-height: 100vh;
+
+    h1 {
+        @include font-size(5rem);
+    }
+
+    .container,
+    .row {
+        height: 100vh;
+    }
+}
+
+#jumbotron-type-2 {
+    @include background("../images/bg-jumbotron-type-2.png", center, cover);
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    position: relative;
+
+    h1 {
+        @include font-size(5rem);
+    }
+
+    h2 {
+        @include font-size(3rem);
+    }
+
+    .container {
+        height: 100vh;
+    }
+
+    .row {
+        height: 50%;
+    }
+
+    #bg-iphone {
+        @include background(
+            "../images/why-choose-mixen/bg-iphone.png",
+            center,
+            contain
+        );
+        width: 262px;
+        height: 450px;
+        overflow: hidden;
+        padding: 60px 30px 30px;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        text-align: center;
+    }
+}
+
+#about-us {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+
+    .texto {
+        position: relative;
+        z-index: 2;
+    }
+
+    .decor {
+        display: none;
+        position: absolute;
+        width: 250px;
+    }
+}
+
+#our-expertise {
+    @include background("../images/our-expertise/bg.png", center, contain);
+    .card {
+        .row {
+            color: $primary;
+
+            i {
+                @include font-size(1rem);
+            }
+
+            .bg-ico {
+                background-color: $primary;
+                border-radius: 0.5rem;
+                color: $white;
+                padding: 8px;
+                margin-right: 10px;
+            }
+        }
+
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+            color: #7a7a7a;
+            @include font-size(0.8rem);
+        }
+    }
+}
+
+#technologies {
+    @include background("../images/technologies/bg.png", center, cover);
+}
+
+#lfp {
+    .card {
+        height: 100%;
+
+        .card-body {
+            padding: 0; // Changed from padding: 0 1rem 0 0
+        }
+    }
+}
+
+#who-we-build-for {
+    @include background("../images/our-expertise/bg.png", center, contain);
+
+    h6 {
+        color: #7a7a7a;
+    }
+
+    .card {
+        background-color: $primary;
+        color: $white;
+
+        .row {
+            color: $white;
+
+            i {
+                @include font-size(1rem);
+            }
+
+            .bg-ico {
+                background-color: $white;
+                border-radius: 0.5rem;
+                color: $black;
+                padding: 8px;
+                margin-right: 10px;
+            }
+        }
+
+        h4 {
+            color: $white;
+        }
+
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+            color: $white;
+            @include font-size(0.8rem);
+        }
+    }
+}
+
+#blog {
+    .card {
+        padding: 0;
+
+        .badge {
+            position: relative;
+            z-index: 1;
+
+            &:hover,
+            &:focus {
+                background-color: $white;
+            }
+        }
+
+        .card-body {
+            padding: 30px;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            color: var(--bs-card-color);
+
+            .badge {
+                background-color: transparent;
+            }
+
+            .card-title {
+                color: $black;
+            }
+        }
+    }
+}
+
+#clients {
+    text-align: center;
+
+    img {
+        margin: 30px 0;
+        max-width: 80%;
+        max-height: 80px;
+    }
+}
+
+#contact-us {
+    @include background("../images/contact-us/bg.png", center top, contain);
+}
+
+footer {
+    @include font-size(0.9rem);
+
+    nav {
+        @include font-size(0.9rem);
+
+        ul {
+            li {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    .logo {
+        max-width: 200px;
+        position: relative;
+        top: -7px;
+    }
+}

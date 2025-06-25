@@ -1,0 +1,310 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+}
+
+.overlay {
+    z-index: 1;
+    @include font-size(1rem);
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: $white;
+    }
+}
+
+#success-stories,
+#bullet-points {
+    .swiper {
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $white;
+        }
+
+        .swiper-scrollbar {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: rgba(255, 255, 255, 0.5);
+        }
+    }
+
+    .swiper-slide {
+        border-radius: 1.5rem;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+
+        a {
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            z-index: 2;
+        }
+
+        .overlay {
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 30px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+            color: $white;
+            text-align: center;
+        }
+
+        img {
+            border-radius: 1.5rem;
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+#why-choose-mixen {
+    .swiper {
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $white;
+        }
+
+        .swiper-scrollbar {
+            background-color: rgba(255, 255, 255, 0.5);
+            @include absolute-center-x;
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: rgba(0, 0, 0, 1);
+        }
+    }
+
+    .swiper-slide {
+        border-radius: 0.375rem;
+        text-align: center;
+        font-size: 18px;
+        background-color: #dadada;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0 15px;
+        @include transition(ease, 0.3s);
+
+        h4 {
+            @include font-size(1rem);
+        }
+
+        p {
+            @include font-size(0.9rem);
+        }
+
+        &.is-active {
+            background-color: $primary;
+            color: $white;
+
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6 {
+                color: $white;
+            }
+        }
+    }
+}
+
+#success-stories-internal,
+#bullet-points {
+    .swiper {
+        .swiper-button-prev,
+        .swiper-button-next {
+            color: $white;
+        }
+
+        .swiper-scrollbar {
+            background-color: rgba(255, 255, 255, 1);
+        }
+
+        .swiper-scrollbar-drag {
+            background-color: rgba(159, 27, 48, 1);
+        }
+    }
+
+    .swiper-slide {
+        @include transition(ease, 0.3s);
+
+        h4 {
+            @include font-size(1rem);
+        }
+
+        p {
+            @include font-size(0.9rem);
+            color: #bfbfbf;
+        }
+
+        img {
+            margin-bottom: 30px;
+        }
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@include media-breakpoint-up(sm) {
+    #why-choose-mixen {
+        #container-swiper {
+            padding: 204px 140px 0;
+        }
+    }
+
+    #success-stories-internal,
+    #bullet-points {
+        .container-fluid {
+            padding-right: 0;
+            padding-left: 0;
+        }
+
+        .swiperSuccessStoriesInternal {
+            .swiper-wrapper {
+                padding-left: 15%;
+                padding-right: 15%;
+            }
+        }
+
+        .swiper {
+            .swiper-scrollbar {
+                width: 50%;
+                @include absolute-center-x;
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@include media-breakpoint-up(md) {
+    #why-choose-mixen {
+        #container-swiper {
+            padding: 204px 0 0;
+        }
+
+        .swiperWhyChooseMixen {
+            padding: 30px 30px 0;
+        }
+
+        .swiper {
+            .swiper-scrollbar {
+                width: 35%;
+            }
+        }
+
+        .swiper-slide {
+            padding: 15px 15px;
+
+            &.is-center {
+                background-color: $primary;
+                color: $white;
+                transform: rotate(0deg);
+
+                h1,
+                h2,
+                h3,
+                h4,
+                h5,
+                h6 {
+                    color: $white;
+                }
+            }
+
+            &.is-left {
+                transform: rotate(-4deg);
+            }
+
+            &.is-right {
+                transform: rotate(4deg);
+            }
+        }
+    }
+
+    #success-stories-internal #bullet-points {
+        .swiper {
+            .swiper-scrollbar {
+                width: 40%;
+            }
+        }
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@include media-breakpoint-up(lg) {
+    #why-choose-mixen {
+        .swiper-slide {
+            /*
+            h4 {
+                @include font-size(1.5rem);
+            }
+
+            p {
+                @include font-size(1.125rem);
+            }
+            */
+        }
+    }
+
+    #success-stories-internal,
+    #bullet-points {
+        .swiper {
+            .swiper-scrollbar {
+                width: 30%;
+            }
+        }
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@include media-breakpoint-up(xl) {
+    #why-choose-mixen {
+        .swiperWhyChooseMixen {
+            padding: 30px 30px;
+        }
+
+        /*
+        .swiper-slide {
+            max-width: 80%;
+        }
+        */
+    }
+
+    #success-stories-internal {
+        .swiper {
+            .swiper-scrollbar {
+                width: 20%;
+            }
+        }
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@include media-breakpoint-up(xxl) {
+    #why-choose-mixen {
+        .swiper {
+            .swiper-scrollbar {
+                width: 30%;
+            }
+        }
+    }
+}

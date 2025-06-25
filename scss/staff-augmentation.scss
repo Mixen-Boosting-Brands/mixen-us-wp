@@ -1,0 +1,212 @@
+#what-is-mixen {
+    .list-inline-item {
+        display: inline-block;
+        vertical-align: top;
+        min-height: 120px; /* Adjust based on tallest content */
+        text-align: center;
+        width: 160px;
+    }
+
+    .icon {
+        background-color: $primary;
+        display: block;
+        color: $white;
+        width: 100px;
+        height: 100px;
+        margin: 0 auto 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        img {
+            max-width: 60%;
+        }
+    }
+}
+
+#roles {
+    .card {
+        .row {
+            color: $primary;
+
+            i {
+                @include font-size(1rem);
+            }
+
+            .bg-ico {
+                background-color: $primary;
+                border-radius: 0.5rem;
+                color: $white;
+                padding: 8px;
+                margin-right: 10px;
+            }
+        }
+
+        .card-footer {
+            background-color: transparent;
+            border-top: none;
+            color: #7a7a7a;
+            @include font-size(0.8rem);
+        }
+    }
+}
+
+#why-choose-mixen {
+    @include background("../images/why-choose-mixen/bg.png", center, contain);
+
+    #container-swiper {
+        padding: 204px 70px 0;
+    }
+
+    #bg-iphone {
+        @include background(
+            "../images/why-choose-mixen/bg-iphone.png",
+            center,
+            contain
+        );
+        width: 100%;
+        height: 550px;
+        overflow: hidden;
+        padding-top: 90px;
+        position: absolute;
+        top: 0;
+        text-align: center;
+        @include absolute-center-x;
+
+        span {
+            color: $primary;
+        }
+    }
+}
+
+#how-does-it-work {
+    .circle {
+        background-color: $primary;
+        border-radius: 100px;
+        color: $white;
+        font-family: "trapmedium", sans-serif;
+        @include font-size(3rem);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 15px;
+        width: 100px;
+        height: 100px;
+        padding-top: 10px;
+        @include transition(ease, 0.3s);
+    }
+}
+
+#cta {
+    h1 {
+        @include font-size(4rem);
+    }
+
+    .hoverable {
+        img {
+            width: 100px;
+            height: auto;
+            opacity: 0;
+            transition: opacity 0.4s ease;
+        }
+
+        .text {
+            position: relative;
+            transition: all 0.4s ease;
+        }
+
+        #text-1 {
+            left: 55px;
+        }
+
+        #text-2 {
+            right: 55px;
+        }
+
+        #text-3 {
+            left: 60px;
+        }
+
+        #text-4 {
+            right: 60px;
+        }
+
+        .circle {
+            color: $white;
+            width: 50px;
+            height: 50px;
+            border-radius: 100px;
+            display: inline-block;
+            position: relative;
+            @include font-size(1rem);
+            opacity: 0;
+            transition: opacity 0.4s ease;
+
+            div {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        .circle-primary {
+            background-color: #4f4f4f;
+            z-index: 2;
+            top: -8px;
+            right: -10px;
+        }
+
+        .circle-secondary {
+            background-color: $primary;
+            z-index: 1;
+            top: -5px;
+            left: -10px;
+        }
+
+        &:hover,
+        &:focus {
+            img,
+            .circle {
+                opacity: 1;
+            }
+
+            #text-1 {
+                left: -10px;
+            }
+
+            #text-2 {
+                right: -10px;
+            }
+
+            #text-3 {
+                left: 0px;
+            }
+
+            #text-4 {
+                right: 0px;
+            }
+        }
+    }
+}
+
+#mixen-is-different {
+    .vertical-line {
+        display: none;
+    }
+}
+
+#how-we-compare {
+    h3 {
+        @include font-size(1rem);
+    }
+
+    i {
+        color: $primary;
+    }
+
+    .border-start {
+        border-left-width: 2px !important;
+    }
+}

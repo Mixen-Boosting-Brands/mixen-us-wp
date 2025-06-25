@@ -1,0 +1,19 @@
+// 1. First, variables and configuration
+@import "colors";
+@import "fonts";
+@import "mixins";
+
+// 2. Then vendor/framework files
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "../node_modules/aos/src/sass/aos";
+
+// 3. Then your base and global styles
+@import "global";
+@import "staff-augmentation";
+@import "success-story";
+@import "formulario";
+@import "nav-menu";
+@import "swipers";
+
+// 4. Finally, media queries (these should always be last)
+@import "media-queries";
