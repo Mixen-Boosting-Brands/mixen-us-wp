@@ -1076,251 +1076,97 @@
 </section>
 
 <section id="blog" class="bg-light py-30">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-8 col-lg-6 my-auto">
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    A new way to learn<br />
-                    & get knowledge
-                </h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua. 
-                </p>
-            </div>
-            <div class="col-md-4 col-lg-6 my-auto text-end">
-                <a
-                    class="btn btn-secondary"
-                    href="#"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                    >View more posts</a
-                >
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4 mb-4 my-auto">
-                <div
-                    class="card"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="400"
-                >
-                    <a href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/blog/1.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 1
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 2
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 3
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="#">
-                            <h5 class="card-title">Post title</h5>
-                        </a>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sed euismod, nisl eget
-                            aliquam aliquet, nisl nisl aliquet nisl,
-                            eget aliquam nisl nisl eget nisl. Sed
-                            euismod, nisl eget aliquam aliquet, nisl
-                            nisl aliquet nisl, eget aliquam nisl nisl
-                            eget nisl.
-                        </p>
-                        <a href="#" class="btn btn-primary"
-                            >Learn more</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 my-auto">
-                <div
-                    class="card"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="500"
-                >
-                    <a href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/blog/1.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 1
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 2
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 3
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="#">
-                            <h5 class="card-title">Post title</h5>
-                        </a>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sed euismod, nisl eget
-                            aliquam aliquet, nisl nisl aliquet nisl,
-                            eget aliquam nisl nisl eget nisl. Sed
-                            euismod, nisl eget aliquam aliquet, nisl
-                            nisl aliquet nisl, eget aliquam nisl nisl
-                            eget nisl.
-                        </p>
-                        <a href="#" class="btn btn-primary"
-                            >Learn more</a
-                        >
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4 mb-4 my-auto">
-                <div
-                    class="card"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="600"
-                >
-                    <a href="#">
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/blog/1.png"
-                            class="card-img-top"
-                            alt=""
-                        />
-                    </a>
-                    <div class="card-body">
-                        <ul class="list-inline">
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 1
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 2
-                                </a>
-                            </li>
-                            <li class="list-inline-item">
-                                <a
-                                    href="#"
-                                    class="badge rounded-pill align-self-start"
-                                >
-                                    <span class="text-success"
-                                        >&middot;</span
-                                    >
-                                    Cat 3
-                                </a>
-                            </li>
-                        </ul>
-                        <a href="#">
-                            <h5 class="card-title">Post title</h5>
-                        </a>
-                        <p class="card-text">
-                            Lorem ipsum dolor sit amet, consectetur
-                            adipiscing elit. Sed euismod, nisl eget
-                            aliquam aliquet, nisl nisl aliquet nisl,
-                            eget aliquam nisl nisl eget nisl. Sed
-                            euismod, nisl eget aliquam aliquet, nisl
-                            nisl aliquet nisl, eget aliquam nisl nisl
-                            eget nisl.
-                        </p>
-                        <a href="#" class="btn btn-primary"
-                            >Learn more</a
-                        >
-                    </div>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-8 col-lg-6 my-auto">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          A new way to learn<br />& get knowledge
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
+      <div class="col-md-4 col-lg-6 my-auto text-end">
+        <a class="btn btn-secondary" href="<?php echo esc_url(
+            get_permalink(get_option("page_for_posts"))
+        ); ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">View more posts</a>
+      </div>
     </div>
+
+    <div class="row">
+      <?php
+      $blog_query = new WP_Query([
+          "posts_per_page" => 3,
+          "post_status" => "publish",
+      ]);
+
+      if ($blog_query->have_posts()):
+          $delay = 400;
+          while ($blog_query->have_posts()):
+              $blog_query->the_post(); ?>
+        <div class="col-md-4 mb-4 my-auto">
+          <div class="card" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="<?php echo esc_attr(
+              $delay
+          ); ?>">
+            <a href="<?php the_permalink(); ?>">
+              <?php if (has_post_thumbnail()): ?>
+                <?php the_post_thumbnail("medium_large", [
+                    "class" => "card-img-top",
+                    "alt" => get_the_title(),
+                ]); ?>
+              <?php else: ?>
+                <img src="<?php echo esc_url(
+                    get_template_directory_uri() .
+                        "/assets/images/blog/placeholder.png"
+                ); ?>" class="card-img-top" alt="Placeholder">
+              <?php endif; ?>
+            </a>
+
+            <div class="card-body">
+              <?php
+              $categories = get_the_category();
+              if (!empty($categories)): ?>
+                <ul class="list-inline">
+                  <?php foreach ($categories as $category): ?>
+                    <li class="list-inline-item">
+                      <a href="<?php echo esc_url(
+                          get_category_link($category->term_id)
+                      ); ?>" class="badge rounded-pill align-self-start">
+                        <span class="text-success">&middot;</span> <?php echo esc_html(
+                            $category->name
+                        ); ?>
+                      </a>
+                    </li>
+                  <?php endforeach; ?>
+                </ul>
+              <?php endif;
+              ?>
+
+              <a href="<?php the_permalink(); ?>">
+                <h5 class="card-title"><?php the_title(); ?></h5>
+              </a>
+              <p class="card-text"><?php echo wp_trim_words(
+                  get_the_excerpt(),
+                  25,
+                  "..."
+              ); ?></p>
+              <a href="<?php the_permalink(); ?>" class="btn btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      <?php $delay += 100;
+          endwhile;
+          wp_reset_postdata();
+      else:
+           ?>
+        <div class="col-12">
+          <p>No posts found.</p>
+        </div>
+      <?php
+      endif;
+      ?>
+    </div>
+  </div>
 </section>
 
 <section id="clients" class="bg-light pt-30 pb-60">
