@@ -336,5 +336,15 @@
         <script src="<?php echo esc_url(
             get_template_directory_uri()
         ); ?>/assets/js/app.bundle.js"></script>
+
+        <!-- Google tag (gtag.js) -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-62TM6X70DJ"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'G-62TM6X70DJ');
+        </script>
     </body>
 </html>
