@@ -6,13 +6,23 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="<?php bloginfo("description"); ?>">
         <title>
-            <?php
-            wp_title("");
-            if (wp_title("", false)) {
+            <?php if (is_front_page() && is_home()) {
+                // Portada tradicional (entradas recientes)
+                bloginfo("name");
                 echo " - ";
-            }
-            bloginfo("name");
-            ?>
+                bloginfo("description");
+            } elseif (is_front_page()) {
+                // Página asignada como "Inicio"
+                bloginfo("name");
+                echo " - ";
+                bloginfo("description");
+            } else {
+                wp_title("");
+                if (wp_title("", false)) {
+                    echo " - ";
+                }
+                bloginfo("name");
+            } ?>
         </title>
 
         <link rel="alternate" type="application/rss+xml" title="<?php bloginfo(
