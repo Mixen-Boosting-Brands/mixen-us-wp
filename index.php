@@ -534,7 +534,7 @@
       $industry_query = new WP_Query([
           "post_type" => "industry",
           "posts_per_page" => 4,
-          "orderby" => "rand",
+          "orderby" => "rand(" . wp_rand() . ")",
           "post_status" => "publish",
       ]);
 
