@@ -651,114 +651,89 @@
 </section>
 
 <section id="success-stories" class="bg-light py-30">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-8 col-lg-6 my-auto">
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    Real results from real clients
-                </h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    Lorem ipsum dolor sit amet, consectetur adipiscing
-                    elit, sed do eiusmod tempor incididunt ut labore et
-                    dolore magna aliqua.
-                </p>
-            </div>
-        </div>
-        <div class="row mb-4">
-            <div class="col">
-                <div
-                    class="swiper swiperSuccessStories"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/success-stories/1.png"
-                                alt="Logos Medical Center"
-                            />
-                            <div class="overlay">
-                                <div class="caption">
-                                    <h4>Logos Medical Center 1</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute
-                                        irure dolor in reprehenderit in
-                                        voluptate velit esse cillum
-                                        dolore eu fugiat nulla pariatur
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/success-stories/1.png"
-                                alt="Logos Medical Center"
-                            />
-                            <div class="overlay">
-                                <div class="caption">
-                                    <h4>Logos Medical Center 2</h4>
-                                    <p>
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua.
-                                        Ut enim ad minim veniam, quis
-                                        nostrud exercitation ullamco
-                                        laboris nisi ut aliquip ex ea
-                                        commodo consequat. Duis aute
-                                        irure dolor in reprehenderit in
-                                        voluptate velit esse cillum
-                                        dolore eu fugiat nulla pariatur
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col my-auto text-center">
-                <a
-                    class="btn btn-secondary"
-                    href="#"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                    >Explore more success stories</a
-                >
-            </div>
-        </div>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-8 col-lg-6 my-auto">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Real results from real clients
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        </p>
+      </div>
     </div>
+
+    <div class="row mb-4">
+      <div class="col">
+        <div class="swiper swiperSuccessStories" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          <div class="swiper-wrapper">
+
+            <?php
+            $success_query = new WP_Query([
+                "post_type" => "success-story",
+                "posts_per_page" => -1,
+                "post_status" => "publish",
+                "orderby" => "date",
+                "order" => "DESC",
+            ]);
+
+            if ($success_query->have_posts()):
+                while ($success_query->have_posts()):
+                    $success_query->the_post(); ?>
+              <div class="swiper-slide">
+                <a href="<?php the_permalink(); ?>">
+                  <?php if (has_post_thumbnail()): ?>
+                    <?php the_post_thumbnail("thumb-success-story", [
+                        "alt" => get_the_title(),
+                        "class" => "img-fluid",
+                    ]); ?>
+                  <?php else: ?>
+                    <img src="<?php echo esc_url(
+                        get_template_directory_uri() .
+                            "/assets/images/lfp/placeholder.png"
+                    ); ?>" alt="Placeholder" class="img-fluid">
+                  <?php endif; ?>
+                </a>
+
+                <div class="overlay">
+                  <div class="caption">
+                    <h4><?php the_title(); ?></h4>
+                    <p><?php echo wp_trim_words(
+                        get_the_excerpt(),
+                        30,
+                        "..."
+                    ); ?></p>
+                  </div>
+                </div>
+              </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            else:
+                echo "<p>No success stories found.</p>";
+            endif;
+            ?>
+
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-scrollbar"></div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col my-auto text-center">
+        <a class="btn btn-secondary" href="<?php echo esc_url(
+            get_post_type_archive_link("success-story")
+        ); ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Explore more success stories
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="who-we-build-for" class="pt-30 pb-60">
