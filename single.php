@@ -1,71 +1,64 @@
-<?php get_header(); ?>
+<?php
+get_header();
 
-	<main role="main" aria-label="Content">
-	<!-- section -->
-	<section>
+// Get the post thumbnail ID
+$post_thumbnail_id = get_post_thumbnail_id();
 
-	<?php if ( have_posts() ) : while (have_posts() ) : the_post(); ?>
+// Get the raw URL of the post thumbnail
+$post_thumbnail_url = wp_get_attachment_url($post_thumbnail_id);
 
-		<!-- article -->
-		<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+// Get the post categories
+$categories = get_the_category();
+?>
 
-			<!-- post thumbnail -->
-			<?php if ( has_post_thumbnail() ) : // Check if Thumbnail exists. ?>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-					<?php the_post_thumbnail(); // Fullsize image for the single post. ?>
-				</a>
-			<?php endif; ?>
-			<!-- /post thumbnail -->
-
-			<!-- post title -->
-			<h1>
-				<a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>
-			</h1>
-			<!-- /post title -->
-
-			<!-- post details -->
-			<span class="date">
-				<time datetime="<?php the_time( 'Y-m-d' ); ?> <?php the_time( 'H:i' ); ?>">
-					<?php the_date(); ?> <?php the_time(); ?>
-				</time>
-			</span>
-			<span class="author"><?php esc_html_e( 'Published by', 'html5blank' ); ?> <?php the_author_posts_link(); ?></span>
-			<span class="comments"><?php if ( comments_open( get_the_ID() ) ) comments_popup_link( __( 'Leave your thoughts', 'html5blank' ), __( '1 Comment', 'html5blank' ), __( '% Comments', 'html5blank' ) ); ?></span>
-			<!-- /post details -->
-
-			<?php the_content(); // Dynamic Content. ?>
-
-			<?php the_tags( __( 'Tags: ', 'html5blank' ), ', ', '<br>' ); // Separated by commas with a line break at the end. ?>
-
-			<p><?php esc_html_e( 'Categorised in: ', 'html5blank' ); the_category( ', ' ); // Separated by commas. ?></p>
-
-			<p><?php esc_html_e( 'This post was written by ', 'html5blank' ); the_author(); ?></p>
-
-			<?php edit_post_link(); // Always handy to have Edit Post Links available. ?>
-
-			<?php comments_template(); ?>
-
-		</article>
-		<!-- /article -->
-
-	<?php endwhile; ?>
-
-	<?php else : ?>
-
-		<!-- article -->
-		<article>
-
-			<h1><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h1>
-
-		</article>
-		<!-- /article -->
-
-	<?php endif; ?>
-
+	<section id="jumbotron" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $post_thumbnail_url; ?>">
+		<div id="overlay"></div>
 	</section>
-	<!-- /section -->
-	</main>
 
-<?php get_sidebar(); ?>
+    <section id="body" class="py-60">
+        <div class="container">
+            <div class="row mb-1 mb-lg-3">
+                <div class="col">
+					<span class="badge bg-primary rounded-pill mb-2">
+						<?php foreach ($categories as $category):
+          echo esc_html($category->name);
+      endforeach; ?>
+					</span>
+					<h1 class="titulo">
+                        <span class="fs-4"><?php the_title(); ?></span>
+                    </h1>
+                    <p class="subtitulo">
+                        <small>
+						<?php
+      // Get the author's name
+      $author_name = get_the_author_meta("display_name", $post->post_author);
+
+      // Get the post date
+      $post_date = get_the_date('j \d\e F, Y');
+
+      // Get the published time
+      $published_time = get_the_time("g:i a");
+
+      // Output the post data
+      echo "Por " .
+          $author_name .
+          " el " .
+          $post_date .
+          " a la(s) " .
+          $published_time;
+      ?>
+						</small>
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+					<?php the_content(); ?>
+
+					<?php edit_post_link(); ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
