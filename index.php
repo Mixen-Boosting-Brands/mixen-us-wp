@@ -562,7 +562,10 @@
               <div class="card-body h-100 d-flex flex-column justify-content-between">
 
                 <?php
-                // Fetch related success-stories
+                // Store current post object for outer loop
+                $outer_post = $post;
+
+                // Related success-stories query
                 $related_stories = new WP_Query([
                     "post_type" => "success-story",
                     "posts_per_page" => -1,
@@ -589,9 +592,11 @@
                 <?php
                     endwhile;
                     echo "</ul>";
-                    // Reset post data after inner query
-                    wp_reset_postdata();
                 endif;
+
+                // Restore outer post object and reset postdata
+                $post = $outer_post;
+                setup_postdata($post);
                 ?>
 
                 <div>
@@ -624,7 +629,7 @@
       $i++;
 
           endwhile;
-          wp_reset_postdata(); // Important: reset after outer query too
+          wp_reset_postdata();
       else:
            ?>
         <div class="col-12">
