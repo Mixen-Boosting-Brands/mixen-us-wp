@@ -1,45 +1,34 @@
-<?php get_header(); ?>
+<?php
+get_header();
 
-	<main role="main" aria-label="Content">
-		<!-- section -->
-		<section>
+// Get the post thumbnail ID
+$post_thumbnail_id = get_post_thumbnail_id();
 
-			<h1><?php the_title(); ?></h1>
+// Get the raw URL of the post thumbnail
+$post_thumbnail_url = wp_get_attachment_url($post_thumbnail_id);
+?>
 
-		<?php if ( have_posts()) : while ( have_posts() ) : the_post(); ?>
+	<section id="jumbotron" class="parallax-window" data-parallax="scroll" data-image-src="<?php echo $post_thumbnail_url; ?>">
+		<div id="overlay"></div>
+	</section>
 
-			<!-- article -->
-			<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+    <section id="body" class="py-60">
+        <div class="container">
+            <div class="row mb-1 mb-lg-3">
+                <div class="col">
+					<h1 class="titulo-page">
+                        <span class="fs-4"><?php the_title(); ?></span>
+                    </h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+					<?php the_content(); ?>
 
-				<?php the_content(); ?>
-
-				<?php comments_template( '', true ); // Remove if you don't want comments. ?>
-
-				<br class="clear">
-
-				<?php edit_post_link(); ?>
-
-			</article>
-			<!-- /article -->
-
-		<?php endwhile; ?>
-
-		<?php else : ?>
-
-			<!-- article -->
-			<article>
-
-				<h2><?php esc_html_e( 'Sorry, nothing to display.', 'html5blank' ); ?></h2>
-
-			</article>
-			<!-- /article -->
-
-		<?php endif; ?>
-
-		</section>
-		<!-- /section -->
-	</main>
-
-<?php get_sidebar(); ?>
+					<?php edit_post_link(); ?>
+                </div>
+            </div>
+        </div>
+    </section>
 
 <?php get_footer(); ?>
