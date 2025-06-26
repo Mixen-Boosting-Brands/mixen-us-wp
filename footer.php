@@ -111,7 +111,7 @@
             <div class="container mt-5 mb-0 mb-md-5">
                 <div class="row">
                     <div class="col-6 col-md-4 order-md-2 my-auto text-center">
-                        <a href="#">
+                        <a href="<?php echo esc_url(home_url()); ?>">
                             <img
                                 class="logo img-fluid"
                                 src="<?php echo esc_url(
