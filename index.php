@@ -562,14 +562,14 @@
               <div class="card-body h-100 d-flex flex-column justify-content-between">
 
                 <?php
-                // Fetch success-stories where 'related_industries' contains this industry post ID
+                // Fetch related success-stories
                 $related_stories = new WP_Query([
                     "post_type" => "success-story",
                     "posts_per_page" => -1,
                     "post_status" => "publish",
                     "meta_query" => [
                         [
-                            "key" => "related_industries", // ACF field name
+                            "key" => "related_industries",
                             "value" => '"' . $industry_id . '"',
                             "compare" => "LIKE",
                         ],
@@ -589,6 +589,7 @@
                 <?php
                     endwhile;
                     echo "</ul>";
+                    // Reset post data after inner query
                     wp_reset_postdata();
                 endif;
                 ?>
@@ -623,7 +624,7 @@
       $i++;
 
           endwhile;
-          wp_reset_postdata();
+          wp_reset_postdata(); // Important: reset after outer query too
       else:
            ?>
         <div class="col-12">
