@@ -38,7 +38,7 @@
             </a>
 
             <div class="card-body d-flex flex-column justify-content-between">
-              <h5 class="card-title"><?php the_title(); ?></h5>
+              <h5 class="card-title mt-4"><?php the_title(); ?></h5>
               <p class="card-text"><?php echo wp_trim_words(
                   get_the_excerpt(),
                   25,
