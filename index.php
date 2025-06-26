@@ -520,332 +520,130 @@
 </section>
 
 <section id="industry-experience" class="bg-light pt-60 pb-30">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col-md-8 col-lg-6 my-auto">
-                <h1
-                    class="mb-0"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    Industry Experience
-                </h1>
-            </div>
-        </div>
-        <div class="masonry-grid">
-            <div class="grid-item col-md-6 col-lg-7">
-                <div
-                    class="card h-100"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    <div class="col-12">
-                        <div
-                            class="card-body h-100 d-flex flex-column justify-content-between"
-                        >
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                            </ul>
-                            <div>
-                                <h5 class="card-title">
-                                    Effective through the process
-                                </h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 position-relative overflow-hidden thumb"
-                        style="min-height: 200px"
-                    >
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/lfp/thumb-1.png"
-                            class="position-absolute w-100 h-100"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item col-md-6 col-lg-5">
-                <div
-                    class="card h-100"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                >
-                    <div class="col-12">
-                        <div
-                            class="card-body h-100 d-flex flex-column justify-content-between"
-                        >
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                            </ul>
-                            <div>
-                                <h5 class="card-title">
-                                    On time at the finish line
-                                </h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 position-relative overflow-hidden thumb"
-                        style="min-height: 200px"
-                    >
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/lfp/thumb-2.png"
-                            class="position-absolute w-100 h-100"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item col-md-6 col-lg-5">
-                <div
-                    class="card h-100"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    <div class="col-12">
-                        <div
-                            class="card-body h-100 d-flex flex-column justify-content-between"
-                        >
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                            </ul>
-                            <div>
-                                <h5 class="card-title">
-                                    Effective through the process
-                                </h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 position-relative overflow-hidden thumb"
-                        style="min-height: 200px"
-                    >
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/lfp/thumb-1.png"
-                            class="position-absolute w-100 h-100"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-            <div class="grid-item col-md-6 col-lg-7">
-                <div
-                    class="card h-100"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    <div class="col-12">
-                        <div
-                            class="card-body h-100 d-flex flex-column justify-content-between"
-                        >
-                            <ul class="list-inline">
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                                <li class="list-inline-item">
-                                    <p
-                                        class="badge rounded-pill align-self-start"
-                                    >
-                                        <span class="text-success"
-                                            >&middot;</span
-                                        >
-                                        Boosting Brands
-                                    </p>
-                                </li>
-                            </ul>
-                            <div>
-                                <h5 class="card-title">
-                                    On time at the finish line
-                                </h5>
-                                <p class="card-text">
-                                    Lorem ipsum dolor sit amet,
-                                    consectetur adipiscing elit, sed do
-                                    eiusmod tempor incididunt ut labore
-                                    et dolore magna aliqua.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div
-                        class="col-12 position-relative overflow-hidden thumb"
-                        style="min-height: 200px"
-                    >
-                        <img
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/lfp/thumb-2.png"
-                            class="position-absolute w-100 h-100"
-                            alt=""
-                        />
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col my-auto text-center">
-            <a
-                class="btn btn-secondary"
-                href="#"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-                >View more</a
-            >
-        </div>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col-md-8 col-lg-6 my-auto">
+        <h1 class="mb-0" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Industry Experience
+        </h1>
+      </div>
     </div>
+
+    <div class="masonry-grid">
+      <?php
+      $industry_query = new WP_Query([
+          "post_type" => "industry",
+          "posts_per_page" => 4,
+          "orderby" => "rand",
+          "post_status" => "publish",
+      ]);
+
+      $grid_classes = [
+          "col-md-6 col-lg-7",
+          "col-md-6 col-lg-5",
+          "col-md-6 col-lg-5",
+          "col-md-6 col-lg-7",
+      ];
+
+      $delay = 200;
+      $i = 0;
+
+      if ($industry_query->have_posts()):
+          while ($industry_query->have_posts()):
+              $industry_query->the_post(); ?>
+        <div class="grid-item <?php echo esc_attr($grid_classes[$i]); ?>">
+          <div class="card h-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="<?php echo esc_attr(
+              $delay
+          ); ?>">
+            <div class="col-12">
+              <div class="card-body h-100 d-flex flex-column justify-content-between">
+
+                <?php
+                $terms = get_the_terms(get_the_ID(), "industry_category");
+                if ($terms && !is_wp_error($terms)): ?>
+                  <ul class="list-inline">
+                    <?php foreach ($terms as $term):
+                        // Fetch success stories assigned to this term
+                        $related_stories = new WP_Query([
+                            "post_type" => "success-story",
+                            "posts_per_page" => -1,
+                            "tax_query" => [
+                                [
+                                    "taxonomy" => "industry_category",
+                                    "field" => "term_id",
+                                    "terms" => $term->term_id,
+                                ],
+                            ],
+                            "post_status" => "publish",
+                        ]);
+
+                        if ($related_stories->have_posts()):
+                            while ($related_stories->have_posts()):
+                                $related_stories->the_post(); ?>
+                            <li class="list-inline-item">
+                              <p class="badge rounded-pill align-self-start">
+                                <span class="text-success">&middot;</span>
+                                <?php the_title(); ?>
+                              </p>
+                            </li>
+                    <?php
+                            endwhile;
+                            wp_reset_postdata();
+                        endif;
+                    endforeach; ?>
+                  </ul>
+                <?php endif;
+                ?>
+
+                <div>
+                  <h5 class="card-title"><?php the_title(); ?></h5>
+                  <p class="card-text"><?php echo wp_trim_words(
+                      get_the_excerpt(),
+                      25,
+                      "..."
+                  ); ?></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-12 position-relative overflow-hidden thumb" style="min-height: 200px">
+              <?php if (has_post_thumbnail()): ?>
+                <?php the_post_thumbnail("thumb-industry", [
+                    "class" => "position-absolute w-100 h-100 img-fluid",
+                ]); ?>
+              <?php else: ?>
+                <img src="<?php echo esc_url(
+                    get_template_directory_uri() .
+                        "/assets/images/lfp/placeholder.png"
+                ); ?>" class="position-absolute w-100 h-100 img-fluid" alt="Placeholder">
+              <?php endif; ?>
+            </div>
+          </div>
+        </div>
+      <?php
+      $delay += 100;
+      $i++;
+
+          endwhile;
+          wp_reset_postdata();
+      else:
+           ?>
+        <div class="col-12">
+          <p>No industry experience entries found.</p>
+        </div>
+      <?php
+      endif;
+      ?>
+    </div>
+
+    <div class="col my-auto text-center">
+      <a class="btn btn-secondary" href="<?php echo esc_url(
+          get_post_type_archive_link("industry")
+      ); ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        View more
+      </a>
+    </div>
+  </div>
 </section>
 
 <section id="success-stories" class="bg-light py-30">
