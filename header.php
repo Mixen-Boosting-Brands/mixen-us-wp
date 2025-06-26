@@ -62,7 +62,7 @@
 
         <link rel="stylesheet" href="<?php echo esc_url(
             get_template_directory_uri()
-        ); ?>/assets/css/styles.css" />
+        ); ?>/assets/css/styles-v2.css" />
 
         <?php wp_head(); ?>
     </head>
