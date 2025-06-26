@@ -18,7 +18,7 @@ $categories = get_the_category();
     <section id="body" class="py-60">
         <div class="container">
             <div class="row mb-1 mb-lg-3">
-                <div class="col">
+                <div class="col-lg-8 offset-lg-2">
 					<span class="badge bg-primary rounded-pill mb-2">
 						<?php foreach ($categories as $category):
           echo esc_html($category->name);
