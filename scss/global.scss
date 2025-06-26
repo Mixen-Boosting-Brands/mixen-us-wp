@@ -386,6 +386,75 @@ header {
         0 4px 8px rgba(0, 0, 0, 0.05);
 }
 
+#jumbotron {
+    /*
+    background-position: center !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    */
+    min-height: 100vh;
+    padding: 40px 0;
+    display: flex;
+    align-items: center;
+
+    .swiper-jumbotron {
+        position: relative;
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            background-color: $white;
+            border-radius: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+
+            &::after {
+                @include font-size(1.4rem);
+                color: $primary;
+            }
+        }
+    }
+
+    .thumb {
+        background-position: center top !important;
+        background-repeat: no-repeat !important;
+        background-size: cover !important;
+        width: 100%;
+        height: 200px;
+        position: relative;
+
+        a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: block;
+        }
+    }
+
+    @for $i from 1 through 3 {
+        .thumb-#{$i} {
+            @include background(
+                "../images/jumbotron/thumb-#{$i}.png",
+                center top,
+                cover
+            );
+        }
+    }
+
+    .load-more-container,
+    .load-more-button-container {
+        width: 100%;
+        float: left;
+    }
+
+    .load-more-button-container {
+        padding-right: calc(var(--bs-gutter-x) * 0.5);
+        padding-left: calc(var(--bs-gutter-x) * 0.5);
+    }
+}
+
 #jumbotron-home {
     @include background("../images/bg-jumbotron.png", center, cover);
     background-repeat: no-repeat;
