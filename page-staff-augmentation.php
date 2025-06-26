@@ -670,7 +670,9 @@ get_header(); ?>
                     <h1>
                         <span id="text-1" class="text">Keep it</span>
                         <img
-                            src="assets/images/staff-augmentation/decor-keep-it-simple@2x.png"
+                            src="<?php echo esc_url(
+                                get_template_directory_uri()
+                            ); ?>/assets/images/staff-augmentation/decor-keep-it-simple@2x.png"
                             alt=""
                         />
                         <span id="text-2" class="text">simple.</span>
