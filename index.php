@@ -550,7 +550,10 @@
 
       if ($industry_query->have_posts()):
           while ($industry_query->have_posts()):
-              $industry_query->the_post(); ?>
+
+              $industry_query->the_post();
+              $industry_id = get_the_ID();
+              ?>
         <div class="grid-item <?php echo esc_attr($grid_classes[$i]); ?>">
           <div class="card h-100" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="<?php echo esc_attr(
               $delay
@@ -559,40 +562,35 @@
               <div class="card-body h-100 d-flex flex-column justify-content-between">
 
                 <?php
-                $terms = get_the_terms(get_the_ID(), "industry_category");
-                if ($terms && !is_wp_error($terms)): ?>
-                  <ul class="list-inline">
-                    <?php foreach ($terms as $term):
-                        // Fetch success stories assigned to this term
-                        $related_stories = new WP_Query([
-                            "post_type" => "success-story",
-                            "posts_per_page" => -1,
-                            "tax_query" => [
-                                [
-                                    "taxonomy" => "industry_category",
-                                    "field" => "term_id",
-                                    "terms" => $term->term_id,
-                                ],
-                            ],
-                            "post_status" => "publish",
-                        ]);
+                // Fetch success-stories where 'related_industries' contains this industry post ID
+                $related_stories = new WP_Query([
+                    "post_type" => "success-story",
+                    "posts_per_page" => -1,
+                    "post_status" => "publish",
+                    "meta_query" => [
+                        [
+                            "key" => "related_industries", // ACF field name
+                            "value" => '"' . $industry_id . '"',
+                            "compare" => "LIKE",
+                        ],
+                    ],
+                ]);
 
-                        if ($related_stories->have_posts()):
-                            while ($related_stories->have_posts()):
-                                $related_stories->the_post(); ?>
-                            <li class="list-inline-item">
-                              <p class="badge rounded-pill align-self-start">
-                                <span class="text-success">&middot;</span>
-                                <?php the_title(); ?>
-                              </p>
-                            </li>
-                    <?php
-                            endwhile;
-                            wp_reset_postdata();
-                        endif;
-                    endforeach; ?>
-                  </ul>
-                <?php endif;
+                if ($related_stories->have_posts()):
+                    echo '<ul class="list-inline">';
+                    while ($related_stories->have_posts()):
+                        $related_stories->the_post(); ?>
+                      <li class="list-inline-item">
+                        <p class="badge rounded-pill align-self-start">
+                          <span class="text-success">&middot;</span>
+                          <?php the_title(); ?>
+                        </p>
+                      </li>
+                <?php
+                    endwhile;
+                    echo "</ul>";
+                    wp_reset_postdata();
+                endif;
                 ?>
 
                 <div>
