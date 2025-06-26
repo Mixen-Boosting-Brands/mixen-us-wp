@@ -11,7 +11,7 @@ $post_thumbnail_url = wp_get_attachment_url($post_thumbnail_id);
 $categories = get_the_category();
 ?>
 
-	<section id="jumbotron" style="background-image: url('<?php echo $post_thumbnail_url; ?>'); no-repeat;">
+	<section id="jumbotron" style="background: url('<?php echo $post_thumbnail_url; ?>'); no-repeat;">
 		<div id="overlay"></div>
 	</section>
 
