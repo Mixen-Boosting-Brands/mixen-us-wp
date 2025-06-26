@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="success-stories-archive" class="archive-page bg-light pt-60 pb-30">
+<section id="success-stories-archive" class="bg-light pt-100 pb-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-12 text-center">

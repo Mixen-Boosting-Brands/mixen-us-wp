@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<section id="industry-experience" class="archive-page bg-light pt-60 pb-30">
+<section id="industry-experience" class="bg-light pt-100 pb-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
