@@ -171,20 +171,6 @@
     #jumbotron {
         min-height: auto;
         padding: 100px 0 60px;
-
-        .thumb {
-            height: auto;
-        }
-
-        .thumb-1 {
-            height: 458px;
-        }
-
-        @for $i from 2 through 3 {
-            .thumb-#{$i} {
-                height: 227px;
-            }
-        }
     }
 
     .masonry-grid {
