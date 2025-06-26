@@ -384,169 +384,75 @@ get_header(); ?>
 </section>
 
 <section id="success-stories-internal" class="bg-dark pt-60 pb-30">
-    <div class="container">
-        <div class="row mb-4">
-            <div class="col text-center">
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    Success Stories
-                </h1>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row mb-4">
+      <div class="col text-center">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Success Stories
+        </h1>
+      </div>
     </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div
-                    class="swiper swiperSuccessStoriesInternal"
-                    data-aos="fade-in"
-                    data-aos-duration="1000"
-                    data-aos-delay="400"
-                >
-                    <div class="swiper-wrapper">
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                class="img-fluid"
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/staff-augmentation/success-stories/1.png"
-                                alt=""
-                            />
-                            <div class="caption">
-                                <h3>Story</h3>
-                                <p>
-                                    With over 15 years of experience in
-                                    tech innovation, our team doesn’t
-                                    just assign talent: We guide,
-                                    support, and ensure your project
-                                    succeeds.
-                                </p>
-                            </div>
-                        </div>
+  </div>
 
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                class="img-fluid"
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/staff-augmentation/success-stories/1.png"
-                                alt=""
-                            />
-                            <div class="caption">
-                                <h3>Story</h3>
-                                <p>
-                                    Forget about reviewing resumes or
-                                    conducting interviews. Our team
-                                    analyzes your needs and directly
-                                    assigns the right professional.
-                                </p>
-                            </div>
-                        </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col">
+        <div class="swiper swiperSuccessStoriesInternal" data-aos="fade-in" data-aos-duration="1000" data-aos-delay="400">
+          <div class="swiper-wrapper">
 
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                class="img-fluid"
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/staff-augmentation/success-stories/1.png"
-                                alt=""
-                            />
-                            <div class="caption">
-                                <h3>Story</h3>
-                                <p>
-                                    When you work with Mixen, you gain
-                                    access to senior consultants in
-                                    tech, marketing, or design to help
-                                    you make better decisions. And if
-                                    you hire more than 2 people, we
-                                    include a Project Manager at no
-                                    additional cost.
-                                </p>
-                            </div>
-                        </div>
+            <?php
+            $success_query = new WP_Query([
+                "post_type" => "success-story",
+                "posts_per_page" => -1,
+                "post_status" => "publish",
+                "orderby" => "date",
+                "order" => "DESC",
+            ]);
 
-                        <!-- Slide 1 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                class="img-fluid"
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/staff-augmentation/success-stories/1.png"
-                                alt=""
-                            />
-                            <div class="caption">
-                                <h3>Story</h3>
-                                <p>
-                                    With over 15 years of experience in
-                                    tech innovation, our team doesn’t
-                                    just assign talent: We guide,
-                                    support, and ensure your project
-                                    succeeds.
-                                </p>
-                            </div>
-                        </div>
+            if ($success_query->have_posts()):
+                while ($success_query->have_posts()):
+                    $success_query->the_post(); ?>
+              <div class="swiper-slide">
+                <a href="<?php the_permalink(); ?>" class="d-block position-relative">
+                  <?php if (has_post_thumbnail()): ?>
+                    <?php the_post_thumbnail("thumb-staff-success-story", [
+                        "class" => "img-fluid",
+                        "alt" => get_the_title(),
+                    ]); ?>
+                  <?php else: ?>
+                    <img src="<?php echo esc_url(
+                        get_template_directory_uri() .
+                            "/assets/images/lfp/placeholder.png"
+                    ); ?>"
+                         alt="Placeholder"
+                         class="img-fluid">
+                  <?php endif; ?>
 
-                        <!-- Slide 2 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                class="img-fluid"
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/staff-augmentation/success-stories/1.png"
-                                alt=""
-                            />
-                            <div class="caption">
-                                <h3>Story</h3>
-                                <p>
-                                    Forget about reviewing resumes or
-                                    conducting interviews. Our team
-                                    analyzes your needs and directly
-                                    assigns the right professional.
-                                </p>
-                            </div>
-                        </div>
+                  <div class="caption">
+                    <h3><?php the_title(); ?></h3>
+                    <p><?php echo wp_trim_words(
+                        get_the_excerpt(),
+                        35,
+                        "..."
+                    ); ?></p>
+                  </div>
+                </a>
+              </div>
+            <?php
+                endwhile;
+                wp_reset_postdata();
+            else:
+                echo '<p class="text-light">No success stories found.</p>';
+            endif;
+            ?>
 
-                        <!-- Slide 3 -->
-                        <div class="swiper-slide">
-                            <a href="#"></a>
-                            <img
-                                class="img-fluid"
-                                src="<?php echo esc_url(
-                                    get_template_directory_uri()
-                                ); ?>/assets/images/staff-augmentation/success-stories/1.png"
-                                alt=""
-                            />
-                            <div class="caption">
-                                <h3>Story</h3>
-                                <p>
-                                    When you work with Mixen, you gain
-                                    access to senior consultants in
-                                    tech, marketing, or design to help
-                                    you make better decisions. And if
-                                    you hire more than 2 people, we
-                                    include a Project Manager at no
-                                    additional cost.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+          </div>
 
-                    <div class="swiper-scrollbar"></div>
-                </div>
-            </div>
+          <div class="swiper-scrollbar"></div>
         </div>
+      </div>
     </div>
+  </div>
 </section>
 
 <section id="how-does-it-work" class="bg-dark pt-30 pb-60">
