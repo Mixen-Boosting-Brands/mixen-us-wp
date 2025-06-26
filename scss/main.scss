@@ -9,7 +9,6 @@
 
 // 3. Then your base and global styles
 @import "global";
-@import "archive";
 @import "staff-augmentation";
 @import "success-story";
 @import "formulario";
@@ -18,3 +17,5 @@
 
 // 4. Finally, media queries (these should always be last)
 @import "media-queries";
+
+@import "archive";
