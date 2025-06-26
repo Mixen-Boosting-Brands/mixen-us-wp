@@ -1,11 +1,11 @@
 <?php get_header(); ?>
 
-<section id="success-stories-archive" class="bg-light pt-60 pb-30">
+<section id="success-stories-archive" class="archive-page bg-light pt-60 pb-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-12 text-center">
         <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-          Success Stories Archive
+          Success Stories
         </h1>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
           Discover real results from real clients.
