@@ -15,14 +15,14 @@ $post_thumbnail_url = wp_get_attachment_url($post_thumbnail_id);
     <section id="body" class="py-60">
         <div class="container">
             <div class="row mb-1 mb-lg-3">
-                <div class="col">
+                <div class="col-lg-8 offset-lg-2">
 					<h1 class="titulo-page">
                         <span class="fs-4"><?php the_title(); ?></span>
                     </h1>
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-8 offset-lg-2">
 					<?php the_content(); ?>
 
 					<?php edit_post_link(); ?>

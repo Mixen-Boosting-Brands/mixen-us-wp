@@ -52,7 +52,7 @@ $categories = get_the_category();
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-lg-8 offset-lg-2">
 					<?php the_content(); ?>
 
 					<?php edit_post_link(); ?>
