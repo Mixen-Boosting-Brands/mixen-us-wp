@@ -40,11 +40,11 @@ $categories = get_the_category();
       $published_time = get_the_time("g:i a");
 
       // Output the post data
-      echo "Por " .
+      echo "By " .
           $author_name .
-          " el " .
+          " on " .
           $post_date .
-          " a la(s) " .
+          " at " .
           $published_time;
       ?>
 						</small>
