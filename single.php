@@ -19,7 +19,7 @@ $categories = get_the_category();
         <div class="container">
             <div class="row mb-1 mb-lg-3">
                 <div class="col">
-					<span class="badge bg-primary rounded-pill mb-2">
+					<span class="badge rounded-pill mb-2">
 						<?php foreach ($categories as $category):
           echo esc_html($category->name);
       endforeach; ?>
