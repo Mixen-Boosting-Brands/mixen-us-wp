@@ -681,7 +681,7 @@
                 while ($success_query->have_posts()):
                     $success_query->the_post(); ?>
               <div class="swiper-slide">
-                <a href="<?php the_permalink(); ?>">
+                <a href="<?php the_permalink(); ?>" class="d-block position-relative">
                   <?php if (has_post_thumbnail()): ?>
                     <?php the_post_thumbnail("thumb-success-story", [
                         "alt" => get_the_title(),
@@ -691,20 +691,22 @@
                     <img src="<?php echo esc_url(
                         get_template_directory_uri() .
                             "/assets/images/lfp/placeholder.png"
-                    ); ?>" alt="Placeholder" class="img-fluid">
+                    ); ?>"
+                         alt="Placeholder"
+                         class="img-fluid">
                   <?php endif; ?>
-                </a>
 
-                <div class="overlay">
-                  <div class="caption">
-                    <h4><?php the_title(); ?></h4>
-                    <p><?php echo wp_trim_words(
-                        get_the_excerpt(),
-                        30,
-                        "..."
-                    ); ?></p>
+                  <div class="overlay">
+                    <div class="caption">
+                      <h4><?php the_title(); ?></h4>
+                      <p><?php echo wp_trim_words(
+                          get_the_excerpt(),
+                          30,
+                          "..."
+                      ); ?></p>
+                    </div>
                   </div>
-                </div>
+                </a>
               </div>
             <?php
                 endwhile;
@@ -726,9 +728,11 @@
 
     <div class="row">
       <div class="col my-auto text-center">
-        <a class="btn btn-secondary" href="<?php echo esc_url(
-            get_post_type_archive_link("success-story")
-        ); ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+        <a class="btn btn-secondary"
+           href="<?php echo esc_url(
+               get_post_type_archive_link("success-story")
+           ); ?>"
+           data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
           Explore more success stories
         </a>
       </div>
