@@ -30,7 +30,7 @@
         <?php if ($website_url): ?>
           <a class="btn btn-primary" href="<?php echo esc_url(
               $website_url
-          ); ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+          ); ?>" target="_blank" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
             Explore the website
           </a>
         <?php endif; ?>
@@ -41,7 +41,7 @@
         $logo_url = get_field("logo");
         if ($logo_url && $website_url): ?>
           <div id="bg-iphone" class="d-none d-md-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
-            <a href="<?php echo esc_url($website_url); ?>">
+            <a href="<?php echo esc_url($website_url); ?>" target="_blank">
               <img class="img-fluid" src="<?php echo esc_url(
                   $logo_url
               ); ?>" alt="">
