@@ -173,12 +173,12 @@
         <div class="col-lg-8 offset-lg-2 text-center">
           <?php if ($panel_1["title"]): ?>
             <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
-              <?php echo esc_html($panel_1["title"]); ?>
+              <?php echo wp_kses_post($panel_1["title"]); ?>
             </h1>
           <?php endif; ?>
           <?php if ($panel_1["text"]): ?>
             <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
-              <?php echo esc_html($panel_1["text"]); ?>
+              <?php echo wp_kses_post($panel_1["text"]); ?>
             </p>
           <?php endif; ?>
         </div>
@@ -191,10 +191,10 @@
       <?php if ($panel_2 = get_field("panel_2")): ?>
         <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
           <?php if ($panel_2["title"]): ?>
-            <h2><?php echo esc_html($panel_2["title"]); ?></h2>
+            <h2><?php echo wp_kses_post($panel_2["title"]); ?></h2>
           <?php endif; ?>
           <?php if ($panel_2["text"]): ?>
-            <p><?php echo esc_html($panel_2["text"]); ?></p>
+            <p><?php echo wp_kses_post($panel_2["text"]); ?></p>
           <?php endif; ?>
         </div>
       <?php endif; ?>
@@ -203,10 +203,10 @@
       <?php if ($panel_3 = get_field("panel_3")): ?>
         <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
           <?php if ($panel_3["title"]): ?>
-            <h2><?php echo esc_html($panel_3["title"]); ?></h2>
+            <h2><?php echo wp_kses_post($panel_3["title"]); ?></h2>
           <?php endif; ?>
           <?php if ($panel_3["text"]): ?>
-            <p><?php echo esc_html($panel_3["text"]); ?></p>
+            <p><?php echo wp_kses_post($panel_3["text"]); ?></p>
           <?php endif; ?>
         </div>
       <?php endif; ?>
@@ -215,10 +215,10 @@
       <?php if ($panel_4 = get_field("panel_4")): ?>
         <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
           <?php if ($panel_4["title"]): ?>
-            <h2><?php echo esc_html($panel_4["title"]); ?></h2>
+            <h2><?php echo wp_kses_post($panel_4["title"]); ?></h2>
           <?php endif; ?>
           <?php if ($panel_4["text"]): ?>
-            <p><?php echo esc_html($panel_4["text"]); ?></p>
+            <p><?php echo wp_kses_post($panel_4["text"]); ?></p>
           <?php endif; ?>
         </div>
       <?php endif; ?>
@@ -227,10 +227,10 @@
       <?php if ($panel_5 = get_field("panel_5")): ?>
         <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
           <?php if ($panel_5["title"]): ?>
-            <h2><?php echo esc_html($panel_5["title"]); ?></h2>
+            <h2><?php echo wp_kses_post($panel_5["title"]); ?></h2>
           <?php endif; ?>
           <?php if ($panel_5["text"]): ?>
-            <p><?php echo esc_html($panel_5["text"]); ?></p>
+            <p><?php echo wp_kses_post($panel_5["text"]); ?></p>
           <?php endif; ?>
         </div>
       <?php endif; ?>
