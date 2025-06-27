@@ -1,68 +1,57 @@
 <?php get_header(); ?>
 
 <section id="jumbotron-type-2" class="pt-60">
-    <div class="container">
-        <div class="row align-items-center">
-            <div class="col-12 text-center">
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    Success<br />
-                    Stories
-                </h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    Helping your brand reach its full potential.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div
-                class="col-md-6 col-lg-5 offset-lg-2 my-auto text-center text-md-start"
-            >
-                <h2
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="300"
-                >
-                    Quantumware — Field Operations Reimagined
-                </h2>
-                <a
-                    class="btn btn-primary"
-                    href="#"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="400"
-                >
-                    Explore the website
-                </a>
-            </div>
-            <div class="col-md-6 col-lg-3 position-relative">
-                <div
-                    id="bg-iphone"
-                    class="d-none d-md-block"
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="500"
-                >
-                    <a href="#">
-                        <img
-                            class="img-fluid"
-                            src="<?php echo esc_url(
-                                get_template_directory_uri()
-                            ); ?>/assets/images/success-story/logo-brand@2x.png"
-                            alt=""
-                        />
-                    </a>
-                </div>
-            </div>
-        </div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-12 text-center">
+        <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+          Success<br />
+          Stories
+        </h1>
+        <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+          Helping your brand reach its full potential.
+        </p>
+      </div>
     </div>
+
+    <div class="row">
+      <div class="col-md-6 col-lg-5 offset-lg-2 my-auto text-center text-md-start">
+        <?php
+        $main_text = get_field("main_text");
+        $website_url = get_field("website_url");
+
+        if ($main_text): ?>
+          <h2 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="300">
+            <?php echo esc_html($main_text); ?>
+          </h2>
+        <?php endif;
+        ?>
+
+        <?php if ($website_url): ?>
+          <a class="btn btn-primary" href="<?php echo esc_url(
+              $website_url
+          ); ?>" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+            Explore the website
+          </a>
+        <?php endif; ?>
+      </div>
+
+      <div class="col-md-6 col-lg-3 position-relative">
+        <?php
+        $logo_url = get_field("logo");
+        if ($logo_url && $website_url): ?>
+          <div id="bg-iphone" class="d-none d-md-block" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+            <a href="<?php echo esc_url($website_url); ?>">
+              <img class="img-fluid" src="<?php echo esc_url(
+                  $logo_url
+              ); ?>" alt="">
+            </a>
+          </div>
+        <?php endif;
+        ?>
+      </div>
+    </div>
+  </div>
 </section>
 
 <section id="bullet-points" class="bg-dark pt-60">
