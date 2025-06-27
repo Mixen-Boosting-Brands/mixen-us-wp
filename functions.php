@@ -30,6 +30,9 @@ if (function_exists("add_theme_support")) {
     add_image_size("thumb-industry", 400, 300, true); // Industry Thumbnail
     add_image_size("thumb-success-story", 1285, 508, true); // Success Story Thumbnail
     add_image_size("thumb-staff-success-story", 378, 349, true); // Staff Success Story Thumbnail
+    add_image_size("logo-success-story", 466, 466, true); // Logo Success Story Thumbnail
+    add_image_size("slide-success-story", 440, 300, true); // Slide Success Story Thumbnail
+    add_image_size("related-success-story", 822, 426, true); // Related Success Story Thumbnail
     add_image_size("custom-size", 700, 200, true); // Custom Thumbnail Size call using the_post_thumbnail('custom-size');
 
     // Add Support for Custom Backgrounds - Uncomment below if you're going to use.
