@@ -165,201 +165,119 @@
 </section>
 
 <section class="bg-light pt-30 pb-60">
-    <div class="container">
-        <div class="row mb-5">
-            <div class="col-lg-8 offset-lg-2 text-center">
-                <h1
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="100"
-                >
-                    <span class="text-primary"
-                        >15 Years of Experience</span
-                    >
-                    Driving Innovation and Business Growth
-                </h1>
-                <p
-                    data-aos="fade-up"
-                    data-aos-duration="1000"
-                    data-aos-delay="200"
-                >
-                    With over 15 years of experience, I bring a rare
-                    blend of technical expertise, strategic thinking,
-                    and hands-on innovation to every project I take on.
-                    As an Engineer in Information Technologies and
-                    Communications, with a Master’s in Cybersecurity, my
-                    mission has always been clear: to evolve everything
-                    around me through the power of cutting-edge
-                    technology.
-                </p>
-            </div>
+  <div class="container">
+
+    <!-- Panel 1 -->
+    <?php if ($panel_1 = get_field("panel_1")): ?>
+      <div class="row mb-5">
+        <div class="col-lg-8 offset-lg-2 text-center">
+          <?php if ($panel_1["title"]): ?>
+            <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+              <?php echo esc_html($panel_1["title"]); ?>
+            </h1>
+          <?php endif; ?>
+          <?php if ($panel_1["text"]): ?>
+            <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+              <?php echo esc_html($panel_1["text"]); ?>
+            </p>
+          <?php endif; ?>
         </div>
-        <div class="row mb-4">
-            <div
-                class="col-md-6 mb-4"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-            >
-                <h2>
-                    What We
-                    <span class="text-primary">Specialize</span>
-                    In
-                </h2>
-                <p>
-                    From startups to industrial giants, I’ve helped
-                    transform businesses across industries through:
-                </p>
-                <ul>
-                    <li>Web Development & SaaS Platforms</li>
-                    <li>Cybersecurity & Infrastructure Design</li>
-                    <li>Mobile & VR App Development</li>
-                    <li>3D Systems & Haptic Technologies</li>
-                    <li>
-                        Digital Transformation for Traditional
-                        Industries
-                    </li>
-                    <li>Business Consulting and Startup Growth</li>
-                </ul>
-            </div>
-            <div
-                class="col-md-6 mb-4"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="400"
-            >
-                <h2>
-                    Projects that
-                    <span class="text-primary">Made an Impact</span>
-                </h2>
-                <ul>
-                    <li>
-                        Kipup — The technological backbone of hundreds
-                        of auto repair shops in Mexico.
-                    </li>
-                    <li>
-                        Vortex — A custom-built logistics platform
-                        optimizing operations and resource use.
-                    </li>
-                    <li>
-                        Haptic VR Vest — Designed and developed a
-                        wearable device for immersive gaming
-                        experiences.
-                    </li>
-                    <li>
-                        Dozens of custom solutions deployed across
-                        logistics, oil & gas, and manufacturing sectors.
-                    </li>
-                </ul>
-                <p>
-                    "Our software helped one client increase team
-                    efficiency by over 60%."
-                </p>
-            </div>
-            <div
-                class="col-md-6 mb-4"
-                data-aos="fade-right"
-                data-aos-duration="1000"
-                data-aos-delay="500"
-            >
-                <h2>
-                    By the
-                    <span class="text-primary">Numbers</span>
-                </h2>
-                <ul>
-                    <li>50+ custom software projects delivered</li>
-                    <li>
-                        70+ person teams led through high-impact
-                        deployments
-                    </li>
-                    <li>
-                        1 of the Top 10 Most Innovative Companies in
-                        Mexico (Award recipient)
-                    </li>
-                    <li>
-                        60%+ operational efficiency increases for
-                        clients in multiple industries
-                    </li>
-                </ul>
-                <p>
-                    "Our software helped one client increase team
-                    efficiency by over 60%."
-                </p>
-            </div>
-            <div
-                class="col-md-6 mb-4"
-                data-aos="fade-left"
-                data-aos-duration="1000"
-                data-aos-delay="600"
-            >
-                <h2>
-                    More Than a Consultant —
-                    <span class="text-primary">A True Partner</span>
-                </h2>
-                <p>
-                    I don’t just build software—I become part of your
-                    team. I treat your business like it’s my own, and I
-                    don’t leave until the results are clear. Whether
-                    through consulting, mentoring, or speaking at
-                    industry events, I’m committed to helping businesses
-                    evolve, adapt, and lead.
-                </p>
-            </div>
+      </div>
+    <?php endif; ?>
+
+    <div class="row mb-4">
+
+      <!-- Panel 2 -->
+      <?php if ($panel_2 = get_field("panel_2")): ?>
+        <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300">
+          <?php if ($panel_2["title"]): ?>
+            <h2><?php echo esc_html($panel_2["title"]); ?></h2>
+          <?php endif; ?>
+          <?php if ($panel_2["text"]): ?>
+            <p><?php echo esc_html($panel_2["text"]); ?></p>
+          <?php endif; ?>
         </div>
-        <div class="row">
-            <div
-                class="col-md-4 mb-4 text-end"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="100"
-            >
-                <a href="#" target="_blank">
-                    <img
-                        class="img-fluid mb-2"
-                        src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/success-story/thumb-1@2x.png"
-                        alt=""
-                    />
-                    <h6>IPS</h6>
-                </a>
-            </div>
-            <div
-                class="col-md-4 mb-4 text-end"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="200"
-            >
-                <a href="#" target="_blank">
-                    <img
-                        class="img-fluid mb-2"
-                        src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/success-story/thumb-2@2x.png"
-                        alt=""
-                    />
-                    <h6>All-Star Technologies</h6>
-                </a>
-            </div>
-            <div
-                class="col-md-4 mb-4 text-end"
-                data-aos="fade-up"
-                data-aos-duration="1000"
-                data-aos-delay="300"
-            >
-                <a href="#" target="_blank">
-                    <img
-                        class="img-fluid mb-2"
-                        src="<?php echo esc_url(
-                            get_template_directory_uri()
-                        ); ?>/assets/images/success-story/thumb-3@2x.png"
-                        alt=""
-                    />
-                    <h6>Vortex TMS</h6>
-                </a>
-            </div>
+      <?php endif; ?>
+
+      <!-- Panel 3 -->
+      <?php if ($panel_3 = get_field("panel_3")): ?>
+        <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="400">
+          <?php if ($panel_3["title"]): ?>
+            <h2><?php echo esc_html($panel_3["title"]); ?></h2>
+          <?php endif; ?>
+          <?php if ($panel_3["text"]): ?>
+            <p><?php echo esc_html($panel_3["text"]); ?></p>
+          <?php endif; ?>
         </div>
+      <?php endif; ?>
+
+      <!-- Panel 4 -->
+      <?php if ($panel_4 = get_field("panel_4")): ?>
+        <div class="col-md-6 mb-4" data-aos="fade-right" data-aos-duration="1000" data-aos-delay="500">
+          <?php if ($panel_4["title"]): ?>
+            <h2><?php echo esc_html($panel_4["title"]); ?></h2>
+          <?php endif; ?>
+          <?php if ($panel_4["text"]): ?>
+            <p><?php echo esc_html($panel_4["text"]); ?></p>
+          <?php endif; ?>
+        </div>
+      <?php endif; ?>
+
+      <!-- Panel 5 -->
+      <?php if ($panel_5 = get_field("panel_5")): ?>
+        <div class="col-md-6 mb-4" data-aos="fade-left" data-aos-duration="1000" data-aos-delay="600">
+          <?php if ($panel_5["title"]): ?>
+            <h2><?php echo esc_html($panel_5["title"]); ?></h2>
+          <?php endif; ?>
+          <?php if ($panel_5["text"]): ?>
+            <p><?php echo esc_html($panel_5["text"]); ?></p>
+          <?php endif; ?>
+        </div>
+      <?php endif; ?>
+
     </div>
+
+    <!-- Related Success Stories -->
+    <div class="row">
+      <?php
+      $related_success_stories = new WP_Query([
+          "post_type" => "success-story",
+          "posts_per_page" => 3,
+          "post__not_in" => [get_the_ID()],
+          "orderby" => "rand",
+          "post_status" => "publish",
+      ]);
+
+      $delay = 100;
+
+      if ($related_success_stories->have_posts()):
+          while ($related_success_stories->have_posts()):
+              $related_success_stories->the_post(); ?>
+        <div class="col-md-4 mb-4 text-end" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="<?php echo esc_attr(
+            $delay
+        ); ?>">
+          <a href="<?php the_permalink(); ?>" target="_blank">
+            <?php if (has_post_thumbnail()): ?>
+              <?php the_post_thumbnail("related-success-story", [
+                  "class" => "img-fluid mb-2",
+              ]); ?>
+            <?php else: ?>
+              <img class="img-fluid mb-2" src="<?php echo esc_url(
+                  get_template_directory_uri() .
+                      "/assets/images/lfp/placeholder.png"
+              ); ?>" alt="Placeholder">
+            <?php endif; ?>
+            <h6><?php the_title(); ?></h6>
+          </a>
+        </div>
+      <?php $delay += 100;
+          endwhile;
+          wp_reset_postdata();
+      endif;
+      ?>
+    </div>
+
+  </div>
 </section>
 
 <?php get_footer(); ?>
