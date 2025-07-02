@@ -27,13 +27,22 @@
         <?php endif;
         ?>
 
-        <?php if ($website_url): ?>
-          <a class="btn btn-primary" href="<?php echo esc_url(
-              $website_url
-          ); ?>" target="_blank" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
-            Explore the website
-          </a>
-        <?php endif; ?>
+        <ul class="list-inline">
+            <?php if ($website_url): ?>
+                <li class="list-inline-item">
+                    <a class="btn btn-primary" href="<?php echo esc_url(
+                        $website_url
+                    ); ?>" target="_blank" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400">
+                        Visit this case study’s  website
+                    </a>
+                </li>
+            <?php endif; ?>
+            <li class="list-inline-item">
+                <a class="btn btn-secondary" href="#contact-us" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="500">
+                    Claim your free consultation
+                </a>
+            </li>
+        </ul>
       </div>
 
       <div class="col-md-6 col-lg-3 position-relative">
