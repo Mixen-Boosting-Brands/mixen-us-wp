@@ -69,8 +69,8 @@ get_header(); ?>
                         >we help companies like yours scale
                         quickly</strong
                     >
-                    —without hiring directly.  We handpick the ideal
-                    team for your project, so you can start moving
+                    —without hiring directly.<br><br>We handpick the <strong>ideal
+                    team for your project<strong>, so you can start moving
                     forward in days, not weeks.
                 </p>
             </div>
