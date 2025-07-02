@@ -41,7 +41,7 @@ if (isset($_POST["name"])) {
             "noreply@mixen.us",
             "Message from Mixen US contact form"
         );
-        $mail->addAddress("luis.pando@mixen.mx");
+        $mail->addAddress("alfredo.molina@mixen.us");
         $mail->addReplyTo(
             $correo,
             "Hey Mixen US, I'd like to learn more about your services."
