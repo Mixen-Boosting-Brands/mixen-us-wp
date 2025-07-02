@@ -49,7 +49,7 @@ if (isset($_POST["nombre"])) {
 
         //Content
         $mail->isHTML(true);
-        $mail->Subject = "New message from " . $nombre . " " . $apellido;
+        $mail->Subject = "New message from " . $nombre;
 
         // Construir el cuerpo del mensaje
         $mail->Body = "
