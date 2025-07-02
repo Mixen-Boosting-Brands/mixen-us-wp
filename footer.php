@@ -178,7 +178,7 @@
                 </div>
             </div>
             <hr />
-            <div class="container mt-5">
+            <!-- div class="container mt-5">
                 <div class="row">
                     <div class="col-4">
                         <h1
@@ -242,9 +242,6 @@
                                 <nav>
                                     <ul class="list-unstyled">
                                         <li>
-                                            <a href="#"> FAQs </a>
-                                        </li>
-                                        <li>
                                             <a href="#"> Privacy Policy</a>
                                         </li>
                                         <li>
@@ -300,7 +297,7 @@
                         </div>
                     </div>
                 </div>
-            </div>
+            </div -->
             <div class="container mt-5">
                 <div class="row">
                     <div class="col text-center">
