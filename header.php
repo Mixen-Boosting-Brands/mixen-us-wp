@@ -87,26 +87,20 @@
                 <nav role="navigation">
                     <ul id="navmenu" class="list-unstyled mb-0">
                         <li>
-                            <a class="anchor" id="btn-nav-1" href="#">Home</a>
+                            <a id="btn-nav-1" href="<?php echo esc_url(
+                                home_url()
+                            ); ?>">Home</a>
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-2" href="#"
-                                >About Us</a
+                            <a id="btn-nav-2" href="<?php echo get_permalink(
+                                10
+                            ); ?>"
+                                >Staff Augmentation</a
                             >
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-3" href="#"
-                                >Services</a
-                            >
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-4" href="#"
-                                >Portfolio</a
-                            >
-                        </li>
-                        <li>
-                            <a class="anchor" id="btn-nav-5" href="#"
-                                >Testimonials</a
+                            <a class="anchor" id="btn-nav-3" href="#contact-us"
+                                >Contact Us</a
                             >
                         </li>
                     </ul>
@@ -118,7 +112,7 @@
                 >
                     Talk to an expert
                 </a>
-                <div id="social">
+                <!-- div id="social">
                     <ul class="list-inline">
                         <li class="list-inline-item">
                             <a
@@ -153,7 +147,7 @@
                             </a>
                         </li>
                     </ul>
-                </div>
+                </div -->
                 <!-- div id="contacto-menu">
                     <ul class="list-unstyled">
                         <li>
@@ -193,16 +187,12 @@
                                     <a href="#"> Home </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"> About Us </a>
+                                    <a href="<?php echo get_permalink(
+                                        10
+                                    ); ?>"> Staff Augmentation </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#"> Services </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#"> Portfolio </a>
-                                </li>
-                                <li class="list-inline-item">
-                                    <a href="#"> Testimonials </a>
+                                    <a href="#contact-us"> Contacto </a>
                                 </li>
                             </ul>
                         </nav>
