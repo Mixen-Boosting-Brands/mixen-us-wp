@@ -79,17 +79,17 @@
     <div class="container">
         <div class="row">
             <div class="col-md-6 offset-md-3 texto">
-                <p
+                <!-- p
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
                     About Us
-                </p>
+                </p -->
                 <h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="200"
+                    data-aos-delay="100"
                 >
                     Scalable Software &<br />
                     Talent Solutions for<br />
@@ -98,7 +98,7 @@
                 <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="300"
+                    data-aos-delay="200"
                 >
                     Mixen is your strategic partner in technology. We specialize in back-end development and staff augmentation, helping companies scale faster and smarter. Our developers, engineers, and tech leads are ready to plug into your workflow and deliver value from day one.
                 </p>
@@ -106,7 +106,7 @@
                     class="mt-5"
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="400"
+                    data-aos-delay="300"
                 >
                     <strong>
                         Backend Development &<br />
