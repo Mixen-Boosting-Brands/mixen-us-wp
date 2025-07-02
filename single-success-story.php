@@ -66,7 +66,7 @@
 <section id="bullet-points" class="bg-dark pt-60">
   <div class="container">
     <div class="row mb-4">
-      <div class="col">
+      <div class="col text-center">
         <?php if ($title = get_field("bullet_points_title")): ?>
           <h1 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
             <?php echo esc_html($title); ?>
