@@ -25,7 +25,7 @@ $mail->Password = "A+n94zt=8";
 $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
 $mail->Port = 587;
 
-if (isset($_POST["nombre"])) {
+if (isset($_POST["name"])) {
     // Sanitización de todos los campos
     $nombre = strip_tags(trim($_POST["name"]));
     $correo = filter_var(trim($_POST["email"]), FILTER_SANITIZE_EMAIL);
