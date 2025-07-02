@@ -192,7 +192,7 @@
                                     ); ?>"> Staff Augmentation </a>
                                 </li>
                                 <li class="list-inline-item">
-                                    <a href="#contact-us"> Contact </a>
+                                    <a href="#contact-us"> Contact Us </a>
                                 </li>
                             </ul>
                         </nav>
