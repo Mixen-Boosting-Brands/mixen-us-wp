@@ -7,16 +7,14 @@
                             data-aos-duration="1000"
                             data-aos-delay="100"
                         >
-                            Let's bring your vision to life!
+                            Let’s Build Together
                         </h1>
                         <p
                             data-aos="fade-up"
                             data-aos-duration="1000"
                             data-aos-delay="200"
                         >
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit, sed do eiusmod tempor incididunt ut labore et
-                            dolore magna aliqua. 
+                            Ready to scale your product or strengthen your tech team? Let’s explore how Mixen can help.
                         </p>
                     </div>
                 </div>
