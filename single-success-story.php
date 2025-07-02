@@ -153,8 +153,8 @@
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
-                    Always move forward. Always evolve.
-                    <span class="text-primary">Always innovate.</span>
+                    Ready to gather
+                    <span class="text-primary">success</span>?
                 </h1>
             </div>
         </div>
@@ -173,6 +173,8 @@
     </div>
 </section>
 
+<?php
+/*
 <section class="bg-light pt-30 pb-60">
   <div class="container">
 
@@ -288,5 +290,7 @@
 
   </div>
 </section>
+*/
+?>
 
 <?php get_footer(); ?>
