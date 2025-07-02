@@ -100,12 +100,7 @@
                     data-aos-duration="1000"
                     data-aos-delay="300"
                 >
-                    At Mixen US, we offer custom software development
-                    and staff augmentation solutions for growing
-                    businesses. We accelerate your projects with expert
-                    backend developers, scalable architecture, and
-                    technical talent that integrates seamlessly with
-                    your team.
+                    Mixen is your strategic partner in technology. We specialize in back-end development and staff augmentation, helping companies scale faster and smarter. Our developers, engineers, and tech leads are ready to plug into your workflow and deliver value from day one.
                 </p>
                 <p
                     class="mt-5"
@@ -206,26 +201,24 @@
 <section id="technologies" class="bg-dark pt-60 pb-30">
     <div class="container">
         <div class="row mb-4">
-            <div class="col">
+            <div class="col text-center">
                 <h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
-                    Technologies We Excel In to Power<br />
-                    Your Software Projects
+                    Tech Stack & Tools
                 </h1>
                 <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                    Delivering exceptional UI/UX design to ensure
-                    high-quality outcomes and maximize your ROI.
+                    We work with technologies that ensure your systems are escalable.
                 </p>
             </div>
         </div>
-        <div class="row text-center">
+        <!-- div class="row text-center">
             <div class="col-6 col-md-2 offset-md-1 mb-5 my-md-auto">
                 <img
                     class="img-fluid"
@@ -286,7 +279,7 @@
                     data-aos-delay="500"
                 />
             </div>
-        </div>
+        </div -->
     </div>
 </section>
 
@@ -749,15 +742,14 @@
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
-                    Who we build for
+                    With a large set of projects across North America, we know how to move fast, adapt, and build for the future.
                 </h6>
                 <h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                    No matter your company’s size, our technical experts
-                    are ready to support you
+                    No matter the size of your business, our technical experts are here to help. We’re mainly oriented to:
                 </h1>
             </div>
         </div>
@@ -780,12 +772,12 @@
                                 <i class="fa-solid fa-arrow-right"></i>
                             </div>
                         </div>
-                        <h4>Startup</h4>
-                        <p>
+                        <h4>Startups</h4>
+                        <!-- p>
                             APIs, scalable architectures, robust
                             database structures, and enterprise-grade
                             security.
-                        </p>
+                        </p -->
                     </div>
                 </div>
             </div>
@@ -806,10 +798,10 @@
                             </div>
                         </div>
                         <h4>Growing companies</h4>
-                        <p>
+                        <!-- p>
                             Reliable, flexible, and
                             results-driven—regardless of your size.
-                        </p>
+                        </p -->
                     </div>
                 </div>
             </div>
@@ -832,11 +824,11 @@
                             </div>
                         </div>
                         <h4>Enterprises</h4>
-                        <p>
+                        <!-- p>
                             Developers ready to integrate with your
                             team, accelerate sprints, and bring proven
                             expertise in modern technologies.
-                        </p>
+                        </p -->
                     </div>
                 </div>
             </div>
