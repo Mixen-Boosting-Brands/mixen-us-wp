@@ -942,7 +942,7 @@
   </div>
 </section>
 
-<section id="clients" class="bg-light pt-30 pb-60">
+<!-- section id="clients" class="bg-light pt-30 pb-60">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -1288,6 +1288,6 @@
             </div>
         </div>
     </div>
-</section>
+</section -->
 
 <?php get_footer(); ?>
