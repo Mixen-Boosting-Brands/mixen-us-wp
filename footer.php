@@ -114,7 +114,7 @@
                                 class="logo img-fluid"
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
-                                ); ?>/assets/images/logo-white@2x.png"
+                                ); ?>/assets/images/logo-musa-white@2x.png"
                                 alt="<?php bloginfo("name"); ?>"
                                 data-aos="fade-in"
                                 data-aos-duration="2500"

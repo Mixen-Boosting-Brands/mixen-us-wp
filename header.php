@@ -80,7 +80,7 @@
                         class="logo img-fluid"
                         src="<?php echo esc_url(
                             get_template_directory_uri()
-                        ); ?>/assets/images/logo@2x.png"
+                        ); ?>/assets/images/logo-musa@2x.png"
                         alt="<?php bloginfo("name"); ?>"
                     />
                 </a>
@@ -173,7 +173,7 @@
                             <img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
-                                ); ?>/assets/images/logo@2x.png"
+                                ); ?>/assets/images/logo-musa@2x.png"
                                 alt="<?php bloginfo("name"); ?>"
                                 class="logo img-fluid"
                                 id="logo-navbar"
