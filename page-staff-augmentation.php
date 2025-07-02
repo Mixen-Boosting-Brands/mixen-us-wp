@@ -70,7 +70,7 @@ get_header(); ?>
                         quickly</strong
                     >
                     —without hiring directly.<br><br>We handpick the <strong>ideal
-                    team for your project<strong>, so you can start moving
+                    team for your project</strong>, so you can start moving
                     forward in days, not weeks.
                 </p>
             </div>
