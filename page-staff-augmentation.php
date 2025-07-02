@@ -533,8 +533,7 @@ get_header(); ?>
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                    Fill out the form, book a call, or message us on
-                    WhatsApp. We’ll get back to you in less than 24
+                    Fill out the form. We’ll get back to you in less than 24
                     hours.
                 </p>
                 <a
