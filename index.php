@@ -318,19 +318,16 @@
                                             <span class="text-success"
                                                 >&middot;</span
                                             >
-                                            Boosting Brands
+                                            Tech Stack & Tools
                                         </p>
                                     </li>
                                 </ul>
                                 <div>
                                     <h5 class="card-title">
-                                        Efficiency at Every Stage
+                                        Languages
                                     </h5>
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua.
+                                        Node.js, Python, Go, PHP, TypeScript
                                     </p>
                                 </div>
                             </div>
@@ -339,13 +336,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <img
+                            <!-- img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-1.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            />
+                            / -->
                         </div>
                     </div>
                 </div>
@@ -370,19 +367,16 @@
                                             <span class="text-success"
                                                 >&middot;</span
                                             >
-                                            Boosting Brands
+                                            Tech Stack & Tools
                                         </p>
                                     </li>
                                 </ul>
                                 <div>
                                     <h5 class="card-title">
-                                        On-Time Delivery, Every Time
+                                        DevOps
                                     </h5>
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua.
+                                        Docker, Kubernetes, CI/CD pipelines
                                     </p>
                                 </div>
                             </div>
@@ -391,13 +385,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <img
+                            <!-- img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-2.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            />
+                            / -->
                         </div>
                     </div>
                 </div>
@@ -422,20 +416,16 @@
                                             <span class="text-success"
                                                 >&middot;</span
                                             >
-                                            Boosting Brands
+                                            Tech Stack & Tools
                                         </p>
                                     </li>
                                 </ul>
                                 <div>
                                     <h5 class="card-title">
-                                        Minimize Risk with Proven
-                                        Processes
+                                        APIs & Databases
                                     </h5>
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua.
+                                        PostgreSQL, MongoDB, MySQL, REST, GraphQL
                                     </p>
                                 </div>
                             </div>
@@ -444,13 +434,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <img
+                            <!-- img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-3.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            />
+                            / -->
                         </div>
                     </div>
                 </div>
@@ -475,20 +465,16 @@
                                             <span class="text-success"
                                                 >&middot;</span
                                             >
-                                            Boosting Brands
+                                            Tech Stack & Tools
                                         </p>
                                     </li>
                                 </ul>
                                 <div>
                                     <h5 class="card-title">
-                                        Strategic perspective that
-                                        drives innovation
+                                        Cloud
                                     </h5>
                                     <p class="card-text">
-                                        Lorem ipsum dolor sit amet,
-                                        consectetur adipiscing elit, sed
-                                        do eiusmod tempor incididunt ut
-                                        labore et dolore magna aliqua.
+                                        AWS, Azure, GCP
                                     </p>
                                 </div>
                             </div>
@@ -497,13 +483,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <img
+                            <!-- img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-4.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            />
+                            / -->
                         </div>
                     </div>
                 </div>
