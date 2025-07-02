@@ -512,7 +512,7 @@
     </div>
 </section>
 
-<section id="industry-experience" class="bg-light pt-60 pb-30">
+<!-- section id="industry-experience" class="bg-light pt-60 pb-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
@@ -641,9 +641,9 @@
       </a>
     </div>
   </div>
-</section>
+</section -->
 
-<section id="success-stories" class="bg-light py-30">
+<!-- section id="success-stories" class="bg-light py-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
@@ -731,7 +731,7 @@
       </div>
     </div>
   </div>
-</section>
+</section -->
 
 <section id="who-we-build-for" class="pt-30 pb-60">
     <div class="container">
@@ -848,7 +848,7 @@
     </div>
 </section>
 
-<section id="blog" class="bg-light py-30">
+<!-- section id="blog" class="bg-light py-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
@@ -940,9 +940,9 @@
       ?>
     </div>
   </div>
-</section>
+</section -->
 
-<!-- section id="clients" class="bg-light pt-30 pb-60">
+<section id="clients" class="bg-light pt-30 pb-60">
     <div class="container">
         <div class="row mb-4">
             <div class="col">
@@ -952,7 +952,7 @@
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
-                    Our prestigious clients
+                    Brands we have worked with
                 </h1>
             </div>
         </div>
@@ -1288,6 +1288,6 @@
             </div>
         </div>
     </div>
-</section -->
+</section>
 
 <?php get_footer(); ?>
