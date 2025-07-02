@@ -733,7 +733,7 @@
   </div>
 </section -->
 
-<section id="who-we-build-for" class="pt-30 pb-60">
+<section id="who-we-build-for" class="py-60">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 col-md-10 offset-md-1 text-center">
