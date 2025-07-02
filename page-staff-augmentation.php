@@ -464,15 +464,14 @@ get_header(); ?>
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
-                    How does it work?
+                    How We Work
                 </h1>
                 <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="200"
                 >
-                    No complex contracts. No long-term commitments. No
-                    stress.
+                    No complex contracts. No long-term commitments. No stress.
                 </p>
             </div>
         </div>
