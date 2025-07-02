@@ -119,7 +119,7 @@
     </div>
 </section>
 
-<section id="our-expertise" class="pt-30 pb-60">
+<!-- section id="our-expertise" class="pt-30 pb-60">
     <div class="container">
         <div class="row mb-4">
             <div class="col-12 text-center">
@@ -196,7 +196,7 @@
             </div>
         </div>
     </div>
-</section>
+</section -->
 
 <section id="technologies" class="bg-dark pt-60 pb-30">
     <div class="container">
