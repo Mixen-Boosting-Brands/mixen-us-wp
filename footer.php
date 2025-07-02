@@ -110,21 +110,21 @@
             <hr />
             <div class="container mt-5 mb-0 mb-md-5">
                 <div class="row">
-                    <div class="col-6 col-md-4 order-md-2 my-auto text-center">
+                    <div class="col-12 col-md-4 offset-md-3 my-auto text-center">
                         <a href="<?php echo esc_url(home_url()); ?>">
                             <img
                                 class="logo img-fluid"
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/logo-white@2x.png"
-                                alt="Mixen: Boosting Brands"
+                                alt="<?php bloginfo("name"); ?>"
                                 data-aos="fade-in"
                                 data-aos-duration="2500"
                                 data-aos-delay="100"
                             />
                         </a>
                     </div>
-                    <div class="col-6 col-md-4 order-md-3 my-auto text-end">
+                    <!-- div class="col-6 col-md-4 order-md-3 my-auto text-end">
                         <h6
                             class="mb-0 text-uppercase"
                             data-aos="fade-left"
@@ -133,8 +133,8 @@
                         >
                             Smart is Sexy
                         </h6>
-                    </div>
-                    <div
+                    </div -->
+                    <!-- div
                         class="col-md-4 order-md-1 mb-4 my-md-auto text-center text-md-start"
                     >
                         <ul
@@ -176,7 +176,7 @@
                                 </a>
                             </li>
                         </ul>
-                    </div>
+                    </div-->
                 </div>
             </div>
             <hr />
@@ -188,8 +188,8 @@
                             data-aos-duration="1000"
                             data-aos-delay="100"
                         >
-                            Boosting<br />
-                            Brands
+                            Let's Build<br />
+                            Together
                         </h1>
                     </div>
                     <div class="col-8">

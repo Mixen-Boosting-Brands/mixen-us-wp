@@ -200,7 +200,7 @@
 
 <section id="technologies" class="bg-dark pt-60 pb-30">
     <div class="container">
-        <div class="row mb-4">
+        <div class="row">
             <div class="col text-center">
                 <h1
                     data-aos="fade-up"
@@ -285,19 +285,19 @@
 
 <section id="lfp" class="bg-dark pt-30 pb-60">
     <div class="container">
-        <div class="row text-center mb-4">
+        <!-- div class="row text-center mb-4">
             <div class="col">
                 <h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
-                    data-aos-delay="300"
+                    data-aos-delay="0"
                 >
                     Languages, Frameworks & Platforms<br />
                     we specialize in
                 </h1>
             </div>
-        </div>
-        <div class="row">
+        </div -->
+        <div class="row mb-4">
             <div class="col-md-6 mb-4">
                 <div
                     class="card"

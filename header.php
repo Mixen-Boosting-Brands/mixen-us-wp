@@ -81,7 +81,7 @@
                         src="<?php echo esc_url(
                             get_template_directory_uri()
                         ); ?>/assets/images/logo@2x.png"
-                        alt="Mixen: Boosting Brands"
+                        alt="<?php bloginfo("name"); ?>"
                     />
                 </a>
                 <nav role="navigation">
@@ -180,7 +180,7 @@
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/logo@2x.png"
-                                alt="Mixen: Boosting Brands"
+                                alt="<?php bloginfo("name"); ?>"
                                 class="logo img-fluid"
                                 id="logo-navbar"
                             />
