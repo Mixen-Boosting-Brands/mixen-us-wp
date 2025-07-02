@@ -343,7 +343,7 @@ header {
     @include transition(ease, 0.2s);
 
     #logo-navbar {
-        width: 200px;
+        width: 120px;
         @include transition(ease, 0.2s);
     }
 
@@ -366,7 +366,7 @@ header {
     @include transition(ease, 0.3s);
 
     #logo-navbar {
-        width: 160px !important;
+        width: 100px !important;
     }
 
     #mburger {
