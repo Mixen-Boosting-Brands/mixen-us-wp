@@ -334,8 +334,8 @@ header {
     background-color: $white;
     width: 100%;
     height: auto;
+    overflow: visible;
     padding: 15px 30px;
-    // color: ;
     position: fixed;
     top: 0;
     left: 0;
@@ -362,22 +362,30 @@ header {
 
             &:hover {
                 .sub-menu {
-                    display: block;
+                    opacity: 1;
+                    transform: translateY(0);
+                    pointer-events: auto;
                 }
             }
         }
 
         .sub-menu {
-            display: none;
+            display: block; // ya no lo ocultamos con display
+            opacity: 0;
+            transform: translateY(10px);
+            transition:
+                opacity 0.3s ease,
+                transform 0.3s ease;
             position: absolute;
-            top: 100%; // para que aparezca debajo del link
+            top: 100%;
             left: 0;
             background: #fff;
             padding: 0.5rem 0;
             min-width: 180px;
             list-style: none;
             box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-            z-index: 100;
+            z-index: 1100;
+            pointer-events: none;
         }
 
         .btn-sub-menu {
