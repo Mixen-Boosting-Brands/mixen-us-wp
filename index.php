@@ -202,13 +202,13 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <h1
+                <!-- h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
                     Tech Stack & Tools
-                </h1>
+                </h1 -->
                 <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
@@ -218,7 +218,7 @@
                 </p>
             </div>
         </div>
-        <!-- div class="row text-center">
+        <div class="row text-center">
             <div class="col-6 col-md-2 offset-md-1 mb-5 my-md-auto">
                 <img
                     class="img-fluid"
@@ -279,13 +279,13 @@
                     data-aos-delay="500"
                 />
             </div>
-        </div -->
+        </div>
     </div>
 </section>
 
 <section id="lfp" class="bg-dark pt-30 pb-60">
     <div class="container">
-        <!-- div class="row text-center mb-4">
+        <div class="row text-center mb-4">
             <div class="col">
                 <h1
                     data-aos="fade-up"
@@ -296,7 +296,7 @@
                     we specialize in
                 </h1>
             </div>
-        </div -->
+        </div>
         <div class="row mb-4">
             <div class="col-md-6 mb-4">
                 <div
