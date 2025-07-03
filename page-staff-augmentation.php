@@ -383,6 +383,8 @@ get_header(); ?>
     </div>
 </section>
 
+<?php
+/*
 <section id="success-stories-internal" class="bg-dark pt-60 pb-30">
   <div class="container">
     <div class="row mb-4">
@@ -393,7 +395,6 @@ get_header(); ?>
       </div>
     </div>
   </div>
-
   <div class="container-fluid">
     <div class="row">
       <div class="col">
@@ -454,6 +455,8 @@ get_header(); ?>
     </div>
   </div>
 </section>
+*/
+?>
 
 <section id="how-does-it-work" class="bg-dark pt-30 pb-60">
     <div class="container">
