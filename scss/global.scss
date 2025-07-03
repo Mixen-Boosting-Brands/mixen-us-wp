@@ -401,7 +401,7 @@ header {
 }
 
 #jumbotron-home {
-    // @include background("../images/bg-jumbotron.png", center, cover);
+    @include background("../images/bg-jumbotron-type-2", center, cover);
     background-repeat: no-repeat;
     min-height: 100vh;
     text-align: center;
