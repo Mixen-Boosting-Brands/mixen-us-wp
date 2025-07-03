@@ -458,7 +458,7 @@ get_header(); ?>
 */
 ?>
 
-<section id="how-does-it-work" class="bg-dark pt-30 pb-60">
+<section id="how-does-it-work" class="bg-dark py-60">
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col">
