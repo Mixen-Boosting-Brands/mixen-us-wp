@@ -355,6 +355,49 @@ header {
             // color: ;
         }
     }
+
+    nav {
+        .sub-menu {
+            display: none;
+            position: absolute;
+            background: #fff;
+            padding: 0.5rem 0;
+            margin-top: 0.5rem;
+            list-style: none;
+            min-width: 180px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+            li {
+                padding: 0;
+
+                a {
+                    display: block;
+                    padding: 0.5rem 1rem;
+                    color: #333;
+                    text-decoration: none;
+
+                    &:hover {
+                        background-color: #f5f5f5;
+                    }
+                }
+            }
+        }
+
+        .list-inline-item {
+            position: relative;
+
+            &:hover {
+                .sub-menu {
+                    display: block;
+                }
+            }
+        }
+
+        .btn-sub-menu {
+            cursor: pointer;
+            position: relative;
+        }
+    }
 }
 
 .navbar-scroll {

@@ -99,7 +99,12 @@
                             >
                         </li>
                         <li>
-                            <a class="anchor" id="btn-nav-3" href="#contact-us"
+                            <a id="btn-nav-3" href="<?php echo esc_url(
+                                home_url()
+                            ); ?>/blog/success-story/"> Success Stories </a>
+                        </li>
+                        <li>
+                            <a class="anchor" id="btn-nav-4" href="#contact-us"
                                 >Contact Us</a
                             >
                         </li>
@@ -184,12 +189,26 @@
                         <nav>
                             <ul class="list-inline mb-0">
                                 <li class="list-inline-item">
-                                    <a href="#"> Home </a>
+                                    <a href="<?php echo esc_url(
+                                        home_url()
+                                    ); ?>"> Home </a>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="<?php echo get_permalink(
                                         10
                                     ); ?>"> Staff Augmentation </a>
+                                </li>
+                                <li class="list-inline-item">
+                                    <a class="btn-sub-menu" href="#"> Success Stories </a>
+                                    <ul class="sub-menu list-unstyled">
+                                        <li>
+                                            <a href="<?php echo esc_url(
+                                                home_url()
+                                            ); ?>/blog/success-story/">
+                                            Quantumware
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#contact-us"> Contact Us </a>
