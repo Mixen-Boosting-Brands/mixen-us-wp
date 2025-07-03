@@ -201,14 +201,34 @@
                                 <li class="list-inline-item">
                                     <a class="btn-sub-menu" href="#"> Success Stories </a>
                                     <ul class="sub-menu list-unstyled">
-                                        <li>
-                                            <a href="<?php echo esc_url(
-                                                home_url()
-                                            ); ?>/blog/success-story/">
-                                            Quantumware
-                                            </a>
-                                        </li>
-                                    </ul>
+                                        <?php
+                                        $success_stories = new WP_Query([
+                                            "post_type" => "success-story",
+                                            "posts_per_page" => -1,
+                                            "orderby" => "menu_order",
+                                            "order" => "ASC",
+                                        ]);
+
+                                        if ($success_stories->have_posts()):
+                                            while (
+                                                $success_stories->have_posts()
+                                            ):
+                                                $success_stories->the_post(); ?>
+                                              <li>
+                                                <a href="<?php the_permalink(); ?>">
+                                                  <?php the_title(); ?>
+                                                </a>
+                                              </li>
+                                            <?php
+                                            endwhile;
+                                            wp_reset_postdata();
+                                        else:
+                                             ?>
+                                            <li><span>No available stories</span></li>
+                                        <?php
+                                        endif;
+                                        ?>
+                                      </ul>
                                 </li>
                                 <li class="list-inline-item">
                                     <a href="#contact-us"> Contact Us </a>
