@@ -541,6 +541,9 @@ header {
     .card {
         background-color: $primary;
         color: $white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         .row {
             color: $white;
@@ -560,6 +563,10 @@ header {
 
         h4 {
             color: $white;
+        }
+
+        .card-body {
+            flex: none;
         }
 
         .card-footer {
