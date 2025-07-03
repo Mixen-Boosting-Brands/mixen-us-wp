@@ -202,13 +202,13 @@
     <div class="container">
         <div class="row">
             <div class="col text-center">
-                <!-- h1
+                <h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="100"
                 >
                     Tech Stack & Tools
-                </h1 -->
+                </h1>
                 <p
                     data-aos="fade-up"
                     data-aos-duration="1000"
@@ -218,7 +218,7 @@
                 </p>
             </div>
         </div>
-        <div class="row text-center">
+        <!-- div class="row text-center">
             <div class="col-6 col-md-2 offset-md-1 mb-5 my-md-auto">
                 <img
                     class="img-fluid"
@@ -279,7 +279,7 @@
                     data-aos-delay="500"
                 />
             </div>
-        </div>
+        </div -->
     </div>
 </section>
 
@@ -287,14 +287,14 @@
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col">
-                <h1
+                <!-- h1
                     data-aos="fade-up"
                     data-aos-duration="1000"
                     data-aos-delay="0"
                 >
                     Languages, Frameworks & Platforms<br />
                     we specialize in
-                </h1>
+                </h1 -->
             </div>
         </div>
         <div class="row mb-4">
@@ -310,7 +310,7 @@
                             <div
                                 class="card-body h-100 d-flex flex-column justify-content-between"
                             >
-                                <ul class="list-inline">
+                                <!-- ul class="list-inline">
                                     <li class="list-inline-item">
                                         <p
                                             class="badge rounded-pill text-bg-dark align-self-start"
@@ -321,7 +321,7 @@
                                             Tech Stack & Tools
                                         </p>
                                     </li>
-                                </ul>
+                                </ul -->
                                 <div>
                                     <h5 class="card-title">
                                         Languages
@@ -336,13 +336,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <!-- img
+                            <img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-1.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            / -->
+                            />
                         </div>
                     </div>
                 </div>
@@ -359,7 +359,7 @@
                             <div
                                 class="card-body h-100 d-flex flex-column justify-content-between"
                             >
-                                <ul class="list-inline">
+                                <!-- ul class="list-inline">
                                     <li class="list-inline-item">
                                         <p
                                             class="badge rounded-pill text-bg-dark align-self-start"
@@ -370,7 +370,7 @@
                                             Tech Stack & Tools
                                         </p>
                                     </li>
-                                </ul>
+                                </ul -->
                                 <div>
                                     <h5 class="card-title">
                                         DevOps
@@ -385,13 +385,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <!-- img
+                            <img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-2.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            / -->
+                            />
                         </div>
                     </div>
                 </div>
@@ -408,7 +408,7 @@
                             <div
                                 class="card-body h-100 d-flex flex-column justify-content-between"
                             >
-                                <ul class="list-inline">
+                                <!-- ul class="list-inline">
                                     <li class="list-inline-item">
                                         <p
                                             class="badge rounded-pill text-bg-dark align-self-start"
@@ -419,7 +419,7 @@
                                             Tech Stack & Tools
                                         </p>
                                     </li>
-                                </ul>
+                                </ul -->
                                 <div>
                                     <h5 class="card-title">
                                         APIs & Databases
@@ -434,13 +434,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <!-- img
+                            <img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-3.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            / -->
+                            />
                         </div>
                     </div>
                 </div>
@@ -457,7 +457,7 @@
                             <div
                                 class="card-body h-100 d-flex flex-column justify-content-between"
                             >
-                                <ul class="list-inline">
+                                <!-- ul class="list-inline">
                                     <li class="list-inline-item">
                                         <p
                                             class="badge rounded-pill text-bg-dark align-self-start"
@@ -468,7 +468,7 @@
                                             Tech Stack & Tools
                                         </p>
                                     </li>
-                                </ul>
+                                </ul -->
                                 <div>
                                     <h5 class="card-title">
                                         Cloud
@@ -483,13 +483,13 @@
                             class="col-md-4 position-relative overflow-hidden thumb"
                             style="min-height: 200px"
                         >
-                            <!-- img
+                            <img
                                 src="<?php echo esc_url(
                                     get_template_directory_uri()
                                 ); ?>/assets/images/lfp/thumb-4.png"
                                 class="position-absolute w-100 h-100"
                                 alt=""
-                            / -->
+                            />
                         </div>
                     </div>
                 </div>
@@ -498,7 +498,9 @@
     </div>
 </section>
 
-<!-- section id="industry-experience" class="bg-light pt-60 pb-30">
+<?php
+/*
+<section id="industry-experience" class="bg-light pt-60 pb-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
@@ -627,9 +629,13 @@
       </a>
     </div>
   </div>
-</section -->
+</section>
+*/
+?>
 
-<!-- section id="success-stories" class="bg-light py-30">
+<?php
+/*
+<section id="success-stories" class="bg-light py-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
@@ -717,7 +723,9 @@
       </div>
     </div>
   </div>
-</section -->
+</section>
+*/
+?>
 
 <section id="who-we-build-for" class="py-60">
     <div class="container">
@@ -834,7 +842,9 @@
     </div>
 </section>
 
-<!-- section id="blog" class="bg-light py-30">
+<?php
+/*
+<section id="blog" class="bg-light py-30">
   <div class="container">
     <div class="row mb-4">
       <div class="col-md-8 col-lg-6 my-auto">
@@ -926,7 +936,9 @@
       ?>
     </div>
   </div>
-</section -->
+</section>
+*/
+?>
 
 <section id="clients" class="bg-light pt-30 pb-60">
     <div class="container">
