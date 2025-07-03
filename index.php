@@ -198,7 +198,7 @@
     </div>
 </section -->
 
-<section id="technologies" class="bg-dark pt-60 pb-30">
+<section id="technologies" class="bg-dark pt-60">
     <div class="container">
         <div class="row">
             <div class="col text-center">
@@ -283,7 +283,7 @@
     </div>
 </section>
 
-<section id="lfp" class="bg-dark pt-30 pb-60">
+<section id="lfp" class="bg-dark pb-60">
     <div class="container">
         <div class="row text-center mb-4">
             <div class="col">
