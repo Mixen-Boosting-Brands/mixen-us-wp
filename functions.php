@@ -69,7 +69,7 @@ if (function_exists("add_theme_support")) {
     // Localisation Support.
     load_theme_textdomain(
         "html5blank",
-        get_template_directory() . "/languages"
+        get_template_directory() . "/languages",
     );
 }
 
@@ -111,7 +111,7 @@ function html5blank_header_scripts()
                 "jquery",
                 get_template_directory_uri() . "/js/lib/jquery.js",
                 [],
-                "1.11.1"
+                "1.11.1",
             );
 
             // Conditionizr
@@ -120,7 +120,7 @@ function html5blank_header_scripts()
                 get_template_directory_uri() .
                     "/js/lib/conditionizr-4.3.0.min.js",
                 [],
-                "4.3.0"
+                "4.3.0",
             );
 
             // Modernizr
@@ -128,7 +128,7 @@ function html5blank_header_scripts()
                 "modernizr",
                 get_template_directory_uri() . "/js/lib/modernizr.js",
                 [],
-                "2.8.3"
+                "2.8.3",
             );
 
             // Custom scripts
@@ -136,7 +136,7 @@ function html5blank_header_scripts()
                 "html5blankscripts",
                 get_template_directory_uri() . "/js/scripts.js",
                 ["conditionizr", "modernizr", "jquery"],
-                "1.0.0"
+                "1.0.0",
             );
 
             // Enqueue Scripts
@@ -149,7 +149,7 @@ function html5blank_header_scripts()
                 "html5blankscripts-min",
                 get_template_directory_uri() . "/js/scripts.min.js",
                 [],
-                "1.0.0"
+                "1.0.0",
             );
             // Enqueue Scripts
             wp_enqueue_script("html5blankscripts-min");
@@ -166,7 +166,7 @@ function html5blank_conditional_scripts()
             "scriptname",
             get_template_directory_uri() . "/js/scriptname.js",
             ["jquery"],
-            "1.0.0"
+            "1.0.0",
         );
         wp_enqueue_script("scriptname");
     }
@@ -181,7 +181,7 @@ function html5blank_styles()
             "normalize",
             get_template_directory_uri() . "/css/lib/normalize.css",
             [],
-            "7.0.0"
+            "7.0.0",
         );
 
         // Custom CSS
@@ -189,7 +189,7 @@ function html5blank_styles()
             "html5blank",
             get_template_directory_uri() . "/style.css",
             ["normalize"],
-            "1.0"
+            "1.0",
         );
 
         // Register CSS
@@ -200,7 +200,7 @@ function html5blank_styles()
             "html5blankcssmin",
             get_template_directory_uri() . "/style.css",
             [],
-            "1.0"
+            "1.0",
         );
         // Register CSS
         wp_enqueue_style("html5blankcssmin");
@@ -268,7 +268,7 @@ if (function_exists("register_sidebar")) {
         "name" => esc_html("Widget Area 1", "html5blank"),
         "description" => esc_html(
             "Description for this widget-area...",
-            "html5blank"
+            "html5blank",
         ),
         "id" => "widget-area-1",
         "before_widget" => '<div id="%1$s" class="%2$s">',
@@ -282,7 +282,7 @@ if (function_exists("register_sidebar")) {
         "name" => esc_html("Widget Area 2", "html5blank"),
         "description" => esc_html(
             "Description for this widget-area...",
-            "html5blank"
+            "html5blank",
         ),
         "id" => "widget-area-2",
         "before_widget" => '<div id="%1$s" class="%2$s">',
@@ -411,7 +411,7 @@ function html5blankcomments($comment, $args, $depth)
     ?>
     <!-- heads up: starting < for the html tag (li or div) in the next line: -->
     <<?php echo esc_html(
-        $tag
+        $tag,
     ); ?> <?php comment_class(empty($args["has_children"]) ? "" : "parent"); ?> id="comment-<?php comment_ID(); ?>">
     <?php if ("div" != $args["style"]): ?>
     <div id="div-comment-<?php comment_ID(); ?>" class="comment-body">
@@ -422,23 +422,23 @@ function html5blankcomments($comment, $args, $depth)
     } ?>
     <?php printf(
         esc_html('<cite class="fn">%s</cite> <span class="says">says:</span>'),
-        get_comment_author_link()
+        get_comment_author_link(),
     ); ?>
     </div>
 <?php if ($comment->comment_approved == "0"): ?>
     <em class="comment-awaiting-moderation"><?php esc_html_e(
-        "Your comment is awaiting moderation."
+        "Your comment is awaiting moderation.",
     ); ?></em>
     <br />
 <?php endif; ?>
 
     <div class="comment-meta commentmetadata"><a href="<?php echo htmlspecialchars(
-        get_comment_link($comment->comment_ID)
+        get_comment_link($comment->comment_ID),
     ); ?>">
         <?php printf(
             esc_html('%1$s at %2$s'),
             get_comment_date(),
-            get_comment_time()
+            get_comment_time(),
         ); ?></a><?php edit_comment_link(esc_html_e("(Edit)"), "  ", ""); ?>
     </div>
 
@@ -450,7 +450,7 @@ function html5blankcomments($comment, $args, $depth)
             "add_below" => $add_below,
             "depth" => $depth,
             "max_depth" => $args["max_depth"],
-        ])
+        ]),
     ); ?>
     </div>
     <?php if ("div" != $args["style"]): ?>
@@ -583,7 +583,7 @@ function html5_shortcode_demo_2($atts, $content = null)
 function bootstrap_pagination(
     \WP_Query $wp_query = null,
     $echo = true,
-    $params = []
+    $params = [],
 ) {
     if (null === $wp_query) {
         global $wp_query;
@@ -597,7 +597,7 @@ function bootstrap_pagination(
                 "base" => str_replace(
                     999999999,
                     "%#%",
-                    esc_url(get_pagenum_link(999999999))
+                    esc_url(get_pagenum_link(999999999)),
                 ),
                 "format" => "?paged=%#%",
                 "current" => max(1, get_query_var("paged")),
@@ -612,8 +612,8 @@ function bootstrap_pagination(
                 "add_args" => $add_args,
                 "add_fragment" => "",
             ],
-            $params
-        )
+            $params,
+        ),
     );
     if (is_array($pages)) {
         //$current_page = ( get_query_var( 'paged' ) == 0 ) ? 1 : get_query_var( 'paged' );
@@ -635,4 +635,17 @@ function bootstrap_pagination(
         }
     }
     return null;
-}
+} // Bloquear REST API anónima
+add_filter("rest_authentication_errors", function ($result) {
+    if (!empty($result)) {
+        return $result;
+    }
+    // Permitir usuarios logueados
+    if (is_user_logged_in()) {
+        return $result;
+    } // Bloquear REST anónima
+    return new WP_Error("rest_forbidden", "REST API restricted", [
+        "status" => 401,
+    ]);
+}); // Desactivar registro de usuarios nuevos
+add_filter("option_users_can_register", "__return_false");
